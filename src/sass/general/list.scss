@@ -1,0 +1,22 @@
+.list {
+  @include reset-list();
+}
+
+.list--point {
+  li {
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+      @include pseudo;
+
+      background-color: $blue;
+
+      width: 7px;
+      height: 7px;
+      left: 0;
+      top: 6px;
+      border-radius: 50%;
+    }
+  }
+}

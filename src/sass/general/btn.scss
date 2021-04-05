@@ -1,0 +1,102 @@
+.btn {
+  @include reset-button;
+
+  position: relative;
+  font-size: 18px;
+  overflow: hidden;
+
+  box-shadow: none !important;
+
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.btn__content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 15px 45px;
+  z-index: 1;
+}
+
+//btn colors
+.btn--orange {
+  background-color: $orange;
+  color: $white;
+}
+
+.btn--border {
+  background-color: transparent;
+  border: 2px solid $orange;
+  color: $orange;
+  border-radius: 25px;
+  padding: 10px 30px;
+
+  &:active {
+    color: $blue;
+    border-color: $blue;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $blue;
+      border-color: $blue;
+    }
+  }
+}
+
+
+//Наверх кнопка
+.btn-up {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  background-color: $orange-2;
+  color: $white;
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow: 2px 2px 15px rgba(23, 23, 23, 0.1);
+  opacity: 0;
+
+  svg {
+    transform: rotate(90deg);
+  }
+
+  &:active {
+    color: $white;
+    background-color: $orange;
+    opacity: 1 !important;
+  }
+
+  @media (max-width: $media-tb) {
+    width: 45px;
+    height: 45px;
+
+    svg {
+      width: 28px;
+    }
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $white;
+      background-color: $orange;
+      opacity: 1 !important;
+    }
+  }
+}
+
+.button__ripple {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: $blue;
+  transition: width .3s ease-in-out,height .3s ease-in-out,background-color .3s ease-in-out;
+  transform: translate(-50%,-50%);
+}

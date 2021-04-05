@@ -1,0 +1,128 @@
+.fieldset {
+  display: flex;
+  align-items: center;
+
+  input,
+  textarea {
+    position: relative;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 12px 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    outline: none !important;
+    transition: all 0.3s;
+    box-shadow: none;
+    border-radius: 5px;
+    border: none;
+    color: $grey;
+    border: 1px solid $white;
+
+    @media (max-width: $media-md) {
+      font-size: 16px;
+    }
+
+    &:focus {
+      background-color: $white;
+    }
+
+    &.has-value {
+      background-color: $white;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+.fieldset--grey {
+  input,
+  textarea {
+    max-width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    &:focus {
+      border-color: $orange-2;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem !important;
+
+    input,
+    textarea {
+      max-width: 100%;
+    }
+  }
+}
+
+.fieldset__label {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: $white;
+  font-weight: 600;
+  transition: all 0.5s;
+  width: 107px;
+  flex-shrink: 0;
+}
+
+.fieldset--grey .fieldset__label {
+  color: $grey;
+  font-size: 16px;
+}
+
+.radio {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  input {
+    @include visually-hidden;
+  }
+
+  input:checked + .radio__button {
+    border-color: $orange;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover .radio__button {
+      border-color: $orange;
+    }
+  }
+}
+
+.radio__button {
+  position: relative;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 1px solid rgba(67, 66, 66, 0.3);
+  flex-shrink: 0;
+  margin-right: 0.8rem;
+  transition: all 0.3s;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: $orange;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0;
+  }
+}

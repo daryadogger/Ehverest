@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bg {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--contain {
+    background-size: contain;
+  }
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.h-500 {
+  height: 500px;
+
+  @media (max-width: $media-td) {
+    height: 400px;
+  }
+
+  @media (max-width: $media-tb) {
+    height: 300px;
+  }
+}

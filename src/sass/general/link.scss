@@ -1,0 +1,17 @@
+.link {
+  transition: all 0.3s;
+}
+
+.link--black {
+  color: $black;
+
+  &:active {
+    color: $orange-2;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $orange-2;
+    }
+  }
+}
