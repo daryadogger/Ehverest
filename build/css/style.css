@@ -10030,7 +10030,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  color: #424242;
+  color: rgba(0, 0, 0, 0.5);
   -webkit-locale: auto;
   overflow-x: hidden; }
 
@@ -10051,7 +10051,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #424242;
+  color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -10138,6 +10138,9 @@ button, input, optgroup, select, textarea {
     .h-500 {
       height: 300px; } }
 
+.border-radius {
+  border-radius: 15px; }
+
 .btn {
   display: inline-block;
   padding: 0;
@@ -10146,39 +10149,12 @@ button, input, optgroup, select, textarea {
   border: none;
   cursor: pointer;
   position: relative;
-  font-size: 18px;
+  font-size: 20px;
   overflow: hidden;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
-  border-radius: 25px;
-  font-weight: 600; }
-
-.btn__content {
-  position: relative;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  padding: 15px 45px;
-  z-index: 1; }
-
-.btn--orange {
-  background-color: #FF6915;
-  color: #ffffff; }
-
-.btn--border {
-  background-color: transparent;
-  border: 2px solid #FF6915;
-  color: #FF6915;
-  border-radius: 25px;
-  padding: 10px 30px; }
-  .btn--border:active {
-    color: #6674C9;
-    border-color: #6674C9; }
-  @media (min-width: 767px) {
-    .btn--border:hover {
-      color: #6674C9;
-      border-color: #6674C9; } }
+  border-radius: 10px;
+  font-weight: 400; }
 
 .btn-up {
   position: fixed;
@@ -10192,7 +10168,7 @@ button, input, optgroup, select, textarea {
           justify-content: center;
   width: 55px;
   height: 55px;
-  background-color: #F99F4D;
+  background-color: #3E7AEA;
   color: #ffffff;
   z-index: 10;
   border-radius: 50%;
@@ -10204,7 +10180,7 @@ button, input, optgroup, select, textarea {
             transform: rotate(90deg); }
   .btn-up:active {
     color: #ffffff;
-    background-color: #FF6915;
+    background-color: #3E7AEA;
     opacity: 1 !important; }
   @media (max-width: 767px) {
     .btn-up {
@@ -10215,19 +10191,8 @@ button, input, optgroup, select, textarea {
   @media (min-width: 767px) {
     .btn-up:hover {
       color: #ffffff;
-      background-color: #FF6915;
+      background-color: #3E7AEA;
       opacity: 1 !important; } }
-
-.button__ripple {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background-color: #6674C9;
-  -webkit-transition: width .3s ease-in-out,height .3s ease-in-out,background-color .3s ease-in-out;
-  transition: width .3s ease-in-out,height .3s ease-in-out,background-color .3s ease-in-out;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
 
 .link {
   -webkit-transition: all 0.3s;
@@ -10236,10 +10201,10 @@ button, input, optgroup, select, textarea {
 .link--black {
   color: #000000; }
   .link--black:active {
-    color: #F99F4D; }
+    color: #3E7AEA; }
   @media (min-width: 767px) {
     .link--black:hover {
-      color: #F99F4D; } }
+      color: #3E7AEA; } }
 
 .list {
   margin: 0;
@@ -10252,7 +10217,7 @@ button, input, optgroup, select, textarea {
   .list--point li::before {
     position: absolute;
     content: "";
-    background-color: #6674C9;
+    background-color: #3E7AEA;
     width: 7px;
     height: 7px;
     left: 0;
@@ -10281,7 +10246,7 @@ button, input, optgroup, select, textarea {
             box-shadow: none;
     border-radius: 5px;
     border: none;
-    color: #424242;
+    color: rgba(0, 0, 0, 0.5);
     border: 1px solid #ffffff; }
     @media (max-width: 1199px) {
       .fieldset input,
@@ -10302,7 +10267,7 @@ button, input, optgroup, select, textarea {
   border: 1px solid rgba(0, 0, 0, 0.3); }
   .fieldset--grey input:focus,
   .fieldset--grey textarea:focus {
-    border-color: #F99F4D; }
+    border-color: #3E7AEA; }
 
 @media (max-width: 575px) {
   .fieldset--grey {
@@ -10328,7 +10293,7 @@ button, input, optgroup, select, textarea {
   flex-shrink: 0; }
 
 .fieldset--grey .fieldset__label {
-  color: #424242;
+  color: rgba(0, 0, 0, 0.5);
   font-size: 16px; }
 
 .radio {
@@ -10350,12 +10315,12 @@ button, input, optgroup, select, textarea {
     border: 0;
     clip: rect(0 0 0 0); }
   .radio input:checked + .radio__button {
-    border-color: #FF6915; }
+    border-color: #3E7AEA; }
     .radio input:checked + .radio__button::before {
       opacity: 1; }
   @media (min-width: 767px) {
     .radio:hover .radio__button {
-      border-color: #FF6915; } }
+      border-color: #3E7AEA; } }
 
 .radio__button {
   position: relative;
@@ -10375,7 +10340,7 @@ button, input, optgroup, select, textarea {
     top: 50%;
     width: 15px;
     height: 15px;
-    background-color: #FF6915;
+    background-color: #3E7AEA;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -10463,22 +10428,16 @@ h5, .h5 {
   color: #000000; }
 
 .color-grey {
-  color: #424242; }
+  color: rgba(0, 0, 0, 0.5); }
 
 .color-white {
   color: #ffffff; }
-
-.color-orange {
-  color: #FF6915; }
-
-.color-light-grey {
-  color: rgba(0, 0, 0, 0.5); }
 
 .color-blue {
   color: #6674C9; }
 
 .text-muted {
-  color: #424242 !important;
+  color: rgba(0, 0, 0, 0.5) !important;
   opacity: 0.8; }
 
 .text-small,
@@ -10554,7 +10513,7 @@ small {
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
-  background-color: #FF6915;
+  background-color: #3E7AEA;
   color: #ffffff;
   width: 50px;
   height: 50px;
@@ -10562,7 +10521,7 @@ small {
   flex-shrink: 0; }
   @media (min-width: 767px) {
     .basket:hover {
-      background-color: #F99F4D; } }
+      background-color: #3E7AEA; } }
   @media (max-width: 767px) {
     .basket {
       width: 43px;
@@ -10572,7 +10531,7 @@ small {
   position: absolute;
   right: -7px;
   top: -5px;
-  background-color: #6674C9;
+  background-color: #3E7AEA;
   color: #ffffff;
   font-size: 12px;
   border-radius: 50px;
@@ -10679,7 +10638,7 @@ small {
     margin-bottom: 6px; }
   @media (min-width: 767px) {
     .burger:hover .burger__span {
-      background-color: #FF6915; } }
+      background-color: #3E7AEA; } }
   .burger.is-show {
     height: 32px; }
     .burger.is-show .burger__span {
@@ -10761,7 +10720,7 @@ small {
   /* ширина для вертикального скролла */
   height: 8px;
   /* высота для горизонтального скролла */
-  background-color: rgba(66, 66, 66, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px; }
 
 /* ползунок скроллбара */
@@ -10769,9 +10728,6 @@ small {
 .fancybox-stage ::-webkit-scrollbar-thumb {
   background-color: rgba(152, 152, 155, 0.15);
   border-radius: 5px; }
-
-.menu .btn--border {
-  padding: 13px 35px; }
 
 .shade {
   position: fixed;
@@ -10803,7 +10759,7 @@ small {
   text-align: center;
   -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
-  background-color: #6674C9;
+  background-color: #3E7AEA;
   color: #ffffff;
   letter-spacing: 0.5px; }
   @media (max-width: 575px) {
@@ -10820,62 +10776,4 @@ small {
           user-select: none; }
 
 .footer {
-  position: relative;
-  background: url("../img/bg.jpg") 50% 50% no-repeat;
-  background-size: cover;
-  border-radius: 15px 15px 0 0;
-  overflow: hidden; }
-
-.footer__col {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  padding: 3.5rem 5rem 1.2rem 5rem; }
-  .footer__col--color {
-    position: relative;
-    background-color: #F99F4D;
-    z-index: 2; }
-    .footer__col--color::before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      left: -50%;
-      top: 0;
-      background-color: #F99F4D;
-      z-index: -1; }
-  @media (max-width: 991px) {
-    .footer__col {
-      padding: 2rem 2rem 1rem 2rem; } }
-  @media (max-width: 767px) {
-    .footer__col {
-      padding: 2rem 2rem 2rem 2rem; } }
-
-.footer__dev {
-  margin-left: auto; }
-  @media (max-width: 767px) {
-    .footer__dev {
-      margin-left: 0; } }
-
-@media (max-width: 991px) {
-  .footer .logo img {
-    width: 220px; } }
-
-@media (max-width: 991px) {
-  .footer .fs-36 {
-    font-size: 30px; } }
-
-@media (max-width: 767px) {
-  .footer form .fieldset {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-align: start;
-            align-items: flex-start;
-    margin-bottom: 1.2rem !important; } }
-
-@media (max-width: 767px) {
-  .footer form .fieldset__label {
-    margin-bottom: 8px; } }
+  position: relative; }

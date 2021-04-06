@@ -1,53 +1,37 @@
 //Title
-h1,
-h2,
-h3,
-h4,
-h5,
-.h1,
-.h1-lg,
-.h2,
-.h3,
-.h4,
-.h5 {
+h1, h2, h3, h4, h5,
+.h1, .h1-lg, .h2, .h3, .h4, .h5 {
   font-family: $font;
   transition: all 0.3s;
-
-  span {
-    position: relative;
-  }
 }
 
-h1, .h1 {@include font-size(55px);}
-h2, .h2 {@include font-size(40px);}
+h1, .h1 {@include font-size(50px);}
+h2, .h2 {@include font-size(48px);}
 h3, .h3 {@include font-size(36px);}
 h4, .h4 {@include font-size(28px);}
 h5, .h5 {@include font-size(24px);}
 
-.fs-48 {
-  font-size: 48px;
-}
-
-.fs-36 {
-  font-size: 36px;
-}
-
 .fs-24 {
   font-size: 24px;
 }
-
+.fs-22 {
+  font-size: 22px;
+}
 .fs-20 {
   font-size: 20px;
 }
-
 .fs-18 {
   font-size: 18px;
 }
-
+.fs-15 {
+  font-size: 15px;
+}
 .fs-14 {
   font-size: 14px;
 }
-
+.fs-13 {
+  font-size: 13px;
+}
 .fs-12 {
   font-size: 12px;
 }
@@ -62,12 +46,6 @@ h5, .h5 {@include font-size(24px);}
 .color-white {
   color: $white;
 }
-.color-orange {
-  color: $orange;
-}
-.color-light-grey {
-  color: rgba($black, 0.5);
-}
 .color-blue {
   color: #6674C9;
 }
@@ -76,7 +54,6 @@ h5, .h5 {@include font-size(24px);}
   color: $grey !important;
   opacity: 0.8;
 }
-
 
 //Text-size
 .text-small,
@@ -96,9 +73,8 @@ small {
 .fw-600 {
   font-weight: 600;
 }
-
-.fw-700 {
-  font-weight: 700;
+.fw-300 {
+  font-weight: 300;
 }
 
 .user-select {
@@ -107,10 +83,6 @@ small {
 
 .lh-1 {
   line-height: 1;
-}
-
-.subtitle {
-  opacity: 0.5;
 }
 
 .flex-shrink {

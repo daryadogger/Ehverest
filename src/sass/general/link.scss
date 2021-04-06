@@ -6,12 +6,12 @@
   color: $black;
 
   &:active {
-    color: $orange-2;
+    color: $blue;
   }
 
   @media (min-width: $media-tb) {
     &:hover {
-      color: $orange-2;
+      color: $blue;
     }
   }
 }

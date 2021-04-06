@@ -2,47 +2,13 @@
   @include reset-button;
 
   position: relative;
-  font-size: 18px;
+  font-size: 20px;
   overflow: hidden;
 
   box-shadow: none !important;
 
-  border-radius: 25px;
-  font-weight: 600;
-}
-
-.btn__content {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  padding: 15px 45px;
-  z-index: 1;
-}
-
-//btn colors
-.btn--orange {
-  background-color: $orange;
-  color: $white;
-}
-
-.btn--border {
-  background-color: transparent;
-  border: 2px solid $orange;
-  color: $orange;
-  border-radius: 25px;
-  padding: 10px 30px;
-
-  &:active {
-    color: $blue;
-    border-color: $blue;
-  }
-
-  @media (min-width: $media-tb) {
-    &:hover {
-      color: $blue;
-      border-color: $blue;
-    }
-  }
+  border-radius: 10px;
+  font-weight: 400;
 }
 
 
@@ -56,7 +22,7 @@
   justify-content: center;
   width: 55px;
   height: 55px;
-  background-color: $orange-2;
+  background-color: $blue;
   color: $white;
   z-index: 10;
   border-radius: 50%;
@@ -69,7 +35,7 @@
 
   &:active {
     color: $white;
-    background-color: $orange;
+    background-color: $blue;
     opacity: 1 !important;
   }
 
@@ -85,18 +51,9 @@
   @media (min-width: $media-tb) {
     &:hover {
       color: $white;
-      background-color: $orange;
+      background-color: $blue;
       opacity: 1 !important;
     }
   }
 }
 
-.button__ripple {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background-color: $blue;
-  transition: width .3s ease-in-out,height .3s ease-in-out,background-color .3s ease-in-out;
-  transform: translate(-50%,-50%);
-}
