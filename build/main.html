@@ -48,13 +48,83 @@
     <div class="mb-90">
       <div class="container">
         <h2 class="mb-5">Популярные товары</h2>
+        <div class="js-slider-popular">
+          <div class="swiper-container slider-popular">
+            <ul class="list swiper-wrapper">
+              <li class="swiper-slide d-flex p-2">
+                <div class="card card--good">
+                  <div class="marker marker--red">
+                    <span>Акция</span>
+                  </div>
+                  <a class="link d-block card__main" href="#">
+                    <p>Комплекты ГИА по физике</p>
+                    <p>Комплекты для выполнения экспериментальных заданий ОГЭ</p>
+                  </a>
+                  <div class="card__side">
+                    <div class="d-flex quantity js-quantity align-items-center">
+                      <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                        <svg width="12" height="12">
+                          <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                        </svg>
+                      </button>
+                      <input class="js-number" type="text" value="1" name="quantity-input-50" id="quantity-input-50">
+                      <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                        <svg width="12" height="12">
+                          <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-button-next">
+            <svg width="22" height="38">
+              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-prev">
+            <svg width="22" height="38">
+              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
     <div class="mb-90">
       <div class="container">
         <h2 class="mb-5">Новости</h2>
         <div class="row">
-          <div class="col-lg-9"></div>
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-md-6">
+                <a class="card card--news card--lg" href="#">
+                  <div class="card__side bg" style="background-image: url(/img/image-1.jpg);"></div>
+                  <div class="card__main p-4">
+                    <p class="fw-600 fs-20 color-white">Изменился режим работы магазина 30-31 декабря</p>
+                    <p class="date">25.12.2020</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a class="card card--news mb-4" href="#">
+                  <div class="card__side bg" style="background-image: url(/img/image-2.jpg);"></div>
+                  <div class="card__main p-4">
+                    <p class="fw-600 fs-20 color-white">Подарочный сертификат - лучший подарок!</p>
+                    <p class="date">25.12.2020</p>
+                  </div>
+                </a>
+                <a class="card card--news" href="#">
+                  <div class="card__side bg" style="background-image: url(/img/image-3.jpg);"></div>
+                  <div class="card__main p-4">
+                    <p class="fw-600 fs-20 color-white">Новые условия работы</p>
+                    <p class="date">25.12.2020</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-3">
             <div class="bg-light-blue border-radius p-4">
               <p class="fw-600 fs-20 mb-4">Также рекомендуем</p>
@@ -193,7 +263,7 @@
   <div class="shade">Ваши данные отправлены</div>
   <a class="btn-up" href="#" aria-label="Наверх" id="upbutton">
     <svg width="18" height="22">
-      <use xlink:href="img/sprite/sprite.svg#icon-arrow-small"></use>
+      <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
     </svg>
   </a>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

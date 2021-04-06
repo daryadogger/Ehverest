@@ -36,12 +36,69 @@ block main
       .container
         h2.mb-5 Популярные товары
 
+        .js-slider-popular
+          .swiper-container.slider-popular
+            ul.list.swiper-wrapper
+              li.swiper-slide.d-flex.p-2
+                .card.card--good
+                  .marker.marker--red
+                    span Акция
+                  a.link.d-block.card__main(href="#")
+                    p Комплекты ГИА по физике
+                    p Комплекты для выполнения экспериментальных заданий ОГЭ
+
+                  .card__side
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-50" id="quantity-input-50")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+
+
+          .swiper-button-next
+            svg(width="22" height="38")
+              use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+          .swiper-button-prev
+            svg(width="22" height="38")
+              use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+
+
     .mb-90
       .container
         h2.mb-5 Новости
 
         .row
           .col-lg-9
+            .row
+              .col-md-6
+                a.card.card--news.card--lg(href="#")
+                  .card__side.bg(style="background-image: url(/img/image-1.jpg);")
+
+                  .card__main.p-4
+                    p.fw-600.fs-20.color-white Изменился режим работы магазина 30-31 декабря
+                    p.date 25.12.2020
+
+              .col-md-6
+                a.card.card--news.mb-4(href="#")
+                  .card__side.bg(style="background-image: url(/img/image-2.jpg);")
+
+                  .card__main.p-4
+                    p.fw-600.fs-20.color-white Подарочный сертификат - лучший подарок!
+                    p.date 25.12.2020
+
+                a.card.card--news(href="#")
+                  .card__side.bg(style="background-image: url(/img/image-3.jpg);")
+
+                  .card__main.p-4
+                    p.fw-600.fs-20.color-white Новые условия работы
+                    p.date 25.12.2020
+
 
           .col-lg-3
             .bg-light-blue.border-radius.p-4
@@ -67,7 +124,7 @@ block footer
 
   a.btn-up(href="#" aria-label="Наверх" id="upbutton")
     svg(width="18" height="22")
-      use(xlink:href="img/sprite/sprite.svg#icon-arrow-small")
+      use(xlink:href="img/sprite/sprite.svg#icon-arrow")
 
 block modal
   //- +menu()

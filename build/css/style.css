@@ -10194,8 +10194,8 @@ button, input, optgroup, select, textarea {
           box-shadow: 2px 2px 15px rgba(23, 23, 23, 0.1);
   opacity: 0; }
   .btn-up svg {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
   .btn-up:active {
     color: #ffffff;
     background-color: #3E7AEA;
@@ -10673,16 +10673,48 @@ small {
 .card {
   width: 100%;
   border: none;
-  -webkit-box-shadow: 2px 2px 15px rgba(23, 23, 23, 0.1);
-          box-shadow: 2px 2px 15px rgba(23, 23, 23, 0.1);
   background-color: #ffffff;
-  border-radius: 20px; }
+  border-radius: 15px; }
 
 .lead-block__text {
   max-width: 365px; }
 
 .lead-block .photo {
   background-position: 50% 0%; }
+
+.date {
+  position: relative;
+  font-weight: 600;
+  padding-left: 30px;
+  color: #ffffff;
+  margin-bottom: 0; }
+  .date::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background: url("../img/icons/calendar.svg") 50% 50% no-repeat; }
+
+.card--news {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  height: 230px; }
+  .card--news .card__side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    border-radius: 15px; }
+  .card--news.card--lg {
+    min-height: 490px;
+    height: 100%; }
+  .card--news .card__main {
+    margin-top: auto; }
 
 .menu {
   position: fixed;
@@ -10834,3 +10866,36 @@ small {
   height: 80px;
   background-color: #3E7AEA;
   margin-right: 1.5rem; }
+
+.marker {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.quantity input {
+  width: 45px;
+  padding: 3px 5px;
+  font-size: 18px;
+  line-height: 1.25;
+  border: none;
+  border-radius: 4px;
+  background-color: #F8F8F8;
+  color: #434242;
+  text-align: center;
+  outline: none;
+  font-weight: 600; }
+
+.quantity__btn {
+  padding: 0;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #3E7AEA;
+  outline: none !important; }
+  .quantity__btn:active {
+    background-color: #3E7AEA; }
+  @media (min-width: 767px) {
+    .quantity__btn:hover {
+      background-color: #3E7AEA; } }
