@@ -15,3 +15,23 @@
     }
   }
 }
+
+.link--grey {
+  color: $grey;
+
+  &:active {
+    color: $blue;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.link--underlined {
+  span {
+    border-bottom: 1px dashed;
+  }
+}

@@ -11,7 +11,54 @@ block header
 
 block main
   main
+    .mb-90
+      .container
+        h2.mb-5 Каталог товаров
 
+        .text-center
+          a.btn.btn--blue(href="#") Все категории
+
+    .mb-90.bg-light-blue.lead-block
+      .container
+        .row
+          .col-md-6.pt-5.pb-5.d-flex.justify-content-center
+            .lead-block__text
+              p.fs-14.mb-0.color-grey.fw-300 Походная обувь
+              h3.mb-2.fw-600 Новое поступление
+              p Удобная обувь для вашего путешествия по низким ценам!
+              a.btn.btn--blue(href="#") В каталог
+
+
+          .col-md-6.pb-3
+            .photo.bg.h-100.bg--contain.d-block(style="background-image: url(/img/lead-1.png);")
+
+    .mb-90
+      .container
+        h2.mb-5 Популярные товары
+
+    .mb-90
+      .container
+        h2.mb-5 Новости
+
+        .row
+          .col-lg-9
+
+          .col-lg-3
+            .bg-light-blue.border-radius.p-4
+              p.fw-600.fs-20.mb-4 Также рекомендуем
+              ul.list.mb-2
+                li
+                  a.link.link--black.d-block.pb-4(href="#") Как выбрать удочку
+                li
+                  a.link.link--black.d-block.pb-4(href="#") Рассказываем все про горные лыжи
+                li
+                  a.link.link--black.d-block.pb-4(href="#") Домашние тренировки
+                li
+                  a.link.link--black.d-block.pb-4(href="#") Спортивные мероприятия в нашем магазине
+                li
+                  a.link.link--black.d-block.pb-4(href="#") Как выбрать сноуборд
+              .text-center
+                a.btn.btn--blue(href="#") Все статьи
 
 block footer
   +footer()

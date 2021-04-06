@@ -19,13 +19,175 @@
 </head>
 
 <body>
-  <main></main>
+  <main>
+    <div class="mb-90">
+      <div class="container">
+        <h2 class="mb-5">Каталог товаров</h2>
+        <div class="text-center">
+          <a class="btn btn--blue" href="#">Все категории</a>
+        </div>
+      </div>
+    </div>
+    <div class="mb-90 bg-light-blue lead-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 pt-5 pb-5 d-flex justify-content-center">
+            <div class="lead-block__text">
+              <p class="fs-14 mb-0 color-grey fw-300">Походная обувь</p>
+              <h3 class="mb-2 fw-600">Новое поступление</h3>
+              <p>Удобная обувь для вашего путешествия по низким ценам!</p>
+              <a class="btn btn--blue" href="#">В каталог</a>
+            </div>
+          </div>
+          <div class="col-md-6 pb-3">
+            <div class="photo bg h-100 bg--contain d-block" style="background-image: url(/img/lead-1.png);"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-90">
+      <div class="container">
+        <h2 class="mb-5">Популярные товары</h2>
+      </div>
+    </div>
+    <div class="mb-90">
+      <div class="container">
+        <h2 class="mb-5">Новости</h2>
+        <div class="row">
+          <div class="col-lg-9"></div>
+          <div class="col-lg-3">
+            <div class="bg-light-blue border-radius p-4">
+              <p class="fw-600 fs-20 mb-4">Также рекомендуем</p>
+              <ul class="list mb-2">
+                <li>
+                  <a class="link link--black d-block pb-4" href="#">Как выбрать удочку</a>
+                </li>
+                <li>
+                  <a class="link link--black d-block pb-4" href="#">Рассказываем все про горные лыжи</a>
+                </li>
+                <li>
+                  <a class="link link--black d-block pb-4" href="#">Домашние тренировки</a>
+                </li>
+                <li>
+                  <a class="link link--black d-block pb-4" href="#">Спортивные мероприятия в нашем магазине</a>
+                </li>
+                <li>
+                  <a class="link link--black d-block pb-4" href="#">Как выбрать сноуборд</a>
+                </li>
+              </ul>
+              <div class="text-center">
+                <a class="btn btn--blue" href="#">Все статьи</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <footer class="footer">
-    <div class="container">
-      <a class="link link--white link--underlined mt-auto" href="#">
-        <span class="fs-14">Политика обработки персональных данных</span>
-      </a>
-      <a class="link link--white fs-14 fw-700 footer__dev mt-auto" href="https://www.e1media.ru/" target="_blank">Разработка сайта — Е1медиа</a>
+    <div class="footer__top">
+      <div class="container pt-4 pb-4">
+        <form action="/" method="POST">
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+              <div class="footer__icon">
+                <img src="/img/icons/letter.svg" alt="" />
+              </div>
+              <label class="mb-0" for="input-subscribe">
+                <h3 class="fw-600 mb-1">Подпишитесь на рассылку</h3>
+                <p class="fs-18 fw-300 mb-0">Узнавайте первым о выгодных предложениях!</p>
+              </label>
+            </div>
+            <div class="col-md-6 fieldset">
+              <input class="mr-30" type="email" placeholder="Введите ваш email" id="input-subscribe" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required="required" />
+              <button class="btn btn--blue" type="submit">Подписаться</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer__middle">
+      <div class="container pt-5 pb-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a class="link link--black d-block pb-3" href="/">
+              <img class="mb-3" src="/img/logo.png" alt="" />
+              <p>Эверест груп, спортивный магазин для всей семьи</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <p class="fs-20 fw-600 mb-4">Сервис и помощь</p>
+            <ul class="list">
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Личный кабинет</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Оплата и доставка</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Обмен и возврат</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Сервисные услуги</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Гарантийное обслуживание</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Отзывы и предложения</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Юр. лицам</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <p class="fs-20 fw-600 mb-4">Компания</p>
+            <ul class="list">
+              <li>
+                <a class="link link--black d-block pb-3" href="#">О компании</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Наши магазины</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Вакансии</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Контакты</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Новости</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Акции</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <p class="fs-20 fw-600 mb-4">Контакты</p>
+            <a class="link link--black d-block pb-4 fs-18" href="tel:+78000000000">8 800-000-00-00</a>
+            <a class="link link--black d-block pb-4 fs-18" href="mailto:sales@everest.ru">
+              <span>sales@everest.ru</span>
+              <span class="d-inline-block fs-14 color-grey pl-5">с 8:00 до 22:00</span>
+            </a>
+            <a class="link link--black d-block pb-5 fw-600" href="#">Оставьте отзыв на flamp.ru</a>
+            <a class="link" href="http://sportlandia.ru/" target="_blank">
+              <img src="/img/logo-sportlandia.png" alt="" />
+              <span class="fs-14 color-grey">Официальный партнер</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container pt-3 pb-4">
+        <small class="mb-2 mb-md-0">&copy; Эверест груп 2021</small>
+        <a class="link link--grey link--underlined mb-2 mb-md-0" href="#">
+          <span class="fs-14 fw-300">Политика обработки персональных данных</span>
+        </a>
+        <a class="link link--black fs-15" href="https://www.e1media.ru/" target="_blank">Разработка сайта — Е1медиа</a>
+      </div>
     </div>
   </footer>
   <div class="shade">Ваши данные отправлены</div>
