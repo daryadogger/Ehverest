@@ -1,3 +1,22 @@
 .swiper-container {
   user-select: none;
 }
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-prev svg {
+  transform: rotate(180deg);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgba(0, 0, 0, 0.4);
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $black;
+    }
+  }
+}

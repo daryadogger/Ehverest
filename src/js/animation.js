@@ -2,74 +2,20 @@ const animation = () => {
   //wow
   const animations = new window.WOW().init();
 
-  //btns
-  const btns = $(".js-ripple");
+  const cards = $(".card--good");
 
-  if (btns) {
-    function checkTouchDevice() {
-      try {
-        document.createEvent('TouchEvent');
+  if (cards) {
+    cards.each(function() {
+      const card = $(this);
+      const cardSide = card.find(".card__side");
 
-        return true;
-      } catch (e) {
+      card.on("mouseenter", function() {
 
-        return false;
-      }
-    }
-
-    let isTouchDevice = checkTouchDevice();
-
-    if (!isTouchDevice) {
-
-      btns.each(function() {
-        let $button = $(this);
-        let $rippleTemplate = $('<span />', {
-          class: 'button__ripple',
-        });
-        $button.append($rippleTemplate);
-
-        let $ripple = $button.find('.button__ripple');
-
-        $button.on('mouseenter', '*', function(e) {
-          let parentOffset = $button.offset();
-          let relX = e.pageX - parentOffset.left;
-          let relY = e.pageY - parentOffset.top;
-
-          $ripple.css({
-            top: relY,
-            left: relX,
-            width: '225%',
-            height: $button.width() * 2.25,
-          });
-        });
-
-        $button.on('mouseout', '*', function(e) {
-          let parentOffset = $button.offset();
-          let relX = e.pageX - parentOffset.left;
-          let relY = e.pageY - parentOffset.top;
-          $ripple.css({
-            top: relY,
-            left: relX,
-            width: 0,
-            height: 0,
-          });
-        });
       });
 
-    }
-  }
-
-  const promo = $(".promo");
-
-  if (promo) {
-    const promoImgLg = promo.find(".promo__good--lg");
-    const promoImgSm = promo.find(".promo__good--sm");
-
-    $(document).ready(function () {
-      setTimeout(function() {
-        promoImgLg.addClass("show");
-        promoImgSm.addClass("show");
-      }, 300);
+      card.on("mouseleave", function() {
+      
+      });
     });
   }
 

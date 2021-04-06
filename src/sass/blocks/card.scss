@@ -55,3 +55,55 @@
     margin-top: auto;
   }
 }
+
+.card--good {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+
+  .basket {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue;
+    color: $white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    flex-shrink: 0;
+
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        background-color: $blue;
+      }
+    }
+
+    @media (max-width: $media-tb) {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  .price {
+    font-size: 24px;
+    font-weight: 600;
+    color: $blue;
+  }
+
+  .card__side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+
+    img {
+      max-height: 90%;
+    }
+  }
+}

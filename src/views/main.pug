@@ -41,24 +41,127 @@ block main
             ul.list.swiper-wrapper
               li.swiper-slide.d-flex.p-2
                 .card.card--good
-                  .marker.marker--red
-                    span Акция
-                  a.link.d-block.card__main(href="#")
-                    p Комплекты ГИА по физике
-                    p Комплекты для выполнения экспериментальных заданий ОГЭ
+                  .marker.marker--pink
+                    span Новинка
+                  a.link.d-block.card__main.p-3(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-1.png", alt="")
+                    p.fs-14.fw-300.mb-2 Артикул:
+                      span.ml-1 2ZE8VE49J5
+                    p.fw-300.fs-18.color-black Тюбинг Nordway, 89 см*
 
-                  .card__side
+                    .price
+                      span 5 999
+                      span ₽
+
+                  .card__side.p-3
                     .d-flex.quantity.js-quantity.align-items-center
                       button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
                         svg(width="12" height="12")
                           use(xlink:href="img/sprite/sprite.svg#icon-minus")
 
-                      input.js-number(type="text" value="1" name="quantity-input-50" id="quantity-input-50")
+                      input.js-number(type="text" value="1" name="quantity-input-1" id="quantity-input-1")
 
                       button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
                         svg(width="12" height="12")
                           use(xlink:href="img/sprite/sprite.svg#icon-plus")
 
+                    a.link.basket(href="#")
+                      svg(width='23' height='23')
+                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
+
+              li.swiper-slide.d-flex.p-2
+                .card.card--good
+                  .marker.marker--purple
+                    span Все покупают
+                  a.link.d-block.card__main.p-3(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-2.png", alt="")
+                    p.fs-14.fw-300.mb-2 Артикул:
+                      span.ml-1 2ZE8VE49J5
+                    p.fw-300.fs-18.color-black Коньки раздвижные детские Nordway Click-girl
+
+                    .price
+                      span 2 499
+                      span ₽
+
+                  .card__side.p-3
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-2" id="quantity-input-2")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                    a.link.basket(href="#")
+                      svg(width='23' height='23')
+                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
+
+              li.swiper-slide.d-flex.p-2
+                .card.card--good
+                  .marker.marker--peach
+                    span Лучшая цена
+                  a.link.d-block.card__main.p-3(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-3.png", alt="")
+                    p.fs-14.fw-300.mb-2 Артикул:
+                      span.ml-1 2ZE8VE49J5
+                    p.fw-300.fs-18.color-black Сноуборд Termit Fastlanel
+
+                    .price
+                      span 10 999
+                      span ₽
+
+                  .card__side.p-3
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-3" id="quantity-input-3")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                    a.link.basket(href="#")
+                      svg(width='23' height='23')
+                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
+
+              li.swiper-slide.d-flex.p-2
+                .card.card--good
+                  .marker.marker--pink
+                    span Новинка
+                  a.link.d-block.card__main.p-3(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-4.png", alt="")
+                    p.fs-14.fw-300.mb-2 Артикул:
+                      span.ml-1 2ZE8VE49J5
+                    p.fw-300.fs-18.color-black Коньки раздвижные детские Nordway Click-girl
+
+                    .price
+                      span 1 599
+                      span ₽
+
+                  .card__side.p-3
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-4" id="quantity-input-4")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                    a.link.basket(href="#")
+                      svg(width='23' height='23')
+                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
 
 
           .swiper-button-next
@@ -103,17 +206,17 @@ block main
           .col-lg-3
             .bg-light-blue.border-radius.p-4
               p.fw-600.fs-20.mb-4 Также рекомендуем
-              ul.list.mb-2
+              ul.list.mb-4
                 li
-                  a.link.link--black.d-block.pb-4(href="#") Как выбрать удочку
+                  a.link.link--black.d-block.pb-4.pt-2(href="#") Как выбрать удочку
                 li
-                  a.link.link--black.d-block.pb-4(href="#") Рассказываем все про горные лыжи
+                  a.link.link--black.d-block.pb-4.pt-2(href="#") Рассказываем все про горные лыжи
                 li
-                  a.link.link--black.d-block.pb-4(href="#") Домашние тренировки
+                  a.link.link--black.d-block.pb-4.pt-2(href="#") Домашние тренировки
                 li
-                  a.link.link--black.d-block.pb-4(href="#") Спортивные мероприятия в нашем магазине
+                  a.link.link--black.d-block.pb-4.pt-2(href="#") Спортивные мероприятия в нашем магазине
                 li
-                  a.link.link--black.d-block.pb-4(href="#") Как выбрать сноуборд
+                  a.link.link--black.d-block.pb-4.pt-2(href="#") Как выбрать сноуборд
               .text-center
                 a.btn.btn--blue(href="#") Все статьи
 
