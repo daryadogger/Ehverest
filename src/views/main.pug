@@ -1,5 +1,5 @@
 extends layouts/layout
-//- include components/header
+include components/header
 include components/footer
 //- include components/menu
 
@@ -7,10 +7,48 @@ block title
   | Главная страница
 
 block header
-  //- +header()
+  +header()
 
 block main
   main
+    .mb-90.promo
+      .container.pt-4
+        .js-promo-slider.swiper-container.slider-promo.mb-5
+          ul.list.swiper-wrapper
+            li.swiper-slide.bg(style="background-image: url(/img/promo.jpg);")
+              h1.fw-600.color-white Согреваем скидками
+              p.fs-20.color-white До -40% на всю зимнюю коллекцию TERM'IT
+              a.btn.btn--blue.mr-auto(href="#") Подробнее
+
+            li.swiper-slide.bg(style="background-image: url(/img/promo.jpg);")
+              h1.fw-600.color-white Согреваем скидками
+              p.fs-20.color-white До -40% на всю зимнюю коллекцию TERM'IT
+              a.btn.btn--blue.mr-auto(href="#") Подробнее
+
+          .swiper-button-next
+            svg(width="22" height="38")
+              use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+          .swiper-button-prev
+            svg(width="22" height="38")
+              use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+
+        .promo__brands
+          ul.list.d-flex.justify-content-between.w-100.mr-5.pr-xl-4
+            li
+              img(src="/img/brand-1.png", alt="")
+            li.d-none.d-sm-flex
+              img(src="/img/brand-2.png", alt="")
+            li.d-none.d-sm-flex
+              img(src="/img/brand-3.png", alt="")
+            li.d-none.d-sm-flex
+              img(src="/img/brand-4.png", alt="")
+            li.d-none.d-md-flex
+              img(src="/img/brand-5.png", alt="")
+            li.d-none.d-lg-flex
+              img(src="/img/brand-6.png", alt="")
+
+          a.btn.btn--blue(href="#") Все бренды
+
     .mb-90
       .container
         h2.mb-5 Каталог товаров
@@ -88,8 +126,8 @@ block main
       .container
         h2.mb-5 Популярные товары
 
-        .js-slider-popular
-          .swiper-container.slider-popular
+        .js-popular-slider.slider-popular
+          .swiper-container
             ul.list.swiper-wrapper
               li.swiper-slide.d-flex.p-2
                 .card.card--good
@@ -102,7 +140,7 @@ block main
                         svg(width="25" height="22")
                           use(xlink:href='img/sprite/sprite.svg#icon-fav')
                         svg(width="25" height="22")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
 
                   a.link.d-block.card__main.p-3(href="#")
                     .card__img.mb-2
@@ -111,9 +149,10 @@ block main
                       span.ml-1 2ZE8VE49J5
                     p.fw-300.fs-18.color-black Тюбинг Nordway, 89 см*
 
-                    .price
-                      span 5 999
-                      span ₽
+                    .card__price
+                      .price
+                        span 5 999
+                        span ₽
 
                   .card__side.p-3
                     .d-flex.quantity.js-quantity.align-items-center
@@ -142,7 +181,7 @@ block main
                         svg(width="25" height="22")
                           use(xlink:href='img/sprite/sprite.svg#icon-fav')
                         svg(width="25" height="22")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
                   a.link.d-block.card__main.p-3(href="#")
                     .card__img.mb-2
                       img(src="/img/good-2.png", alt="")
@@ -150,9 +189,14 @@ block main
                       span.ml-1 2ZE8VE49J5
                     p.fw-300.fs-18.color-black Коньки раздвижные детские Nordway Click-girl
 
-                    .price
-                      span 2 499
-                      span ₽
+                    .card__price
+                      .price
+                        span 2 499
+                        span ₽
+
+                      .card__sale
+                        span -20
+                        span %
 
                   .card__side.p-3
                     .d-flex.quantity.js-quantity.align-items-center
@@ -181,7 +225,7 @@ block main
                         svg(width="25" height="22")
                           use(xlink:href='img/sprite/sprite.svg#icon-fav')
                         svg(width="25" height="22")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
                   a.link.d-block.card__main.p-3(href="#")
                     .card__img.mb-2
                       img(src="/img/good-3.png", alt="")
@@ -189,9 +233,10 @@ block main
                       span.ml-1 2ZE8VE49J5
                     p.fw-300.fs-18.color-black Сноуборд Termit Fastlanel
 
-                    .price
-                      span 10 999
-                      span ₽
+                    .card__price
+                      .price
+                        span 10 999
+                        span ₽
 
                   .card__side.p-3
                     .d-flex.quantity.js-quantity.align-items-center
@@ -220,7 +265,7 @@ block main
                         svg(width="25" height="22")
                           use(xlink:href='img/sprite/sprite.svg#icon-fav')
                         svg(width="25" height="22")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
                   a.link.d-block.card__main.p-3(href="#")
                     .card__img.mb-2
                       img(src="/img/good-4.png", alt="")
@@ -228,9 +273,10 @@ block main
                       span.ml-1 2ZE8VE49J5
                     p.fw-300.fs-18.color-black Коньки раздвижные детские Nordway Click-girl
 
-                    .price
-                      span 1 599
-                      span ₽
+                    .card__price
+                      .price
+                        span 1 599
+                        span ₽
 
                   .card__side.p-3
                     .d-flex.quantity.js-quantity.align-items-center

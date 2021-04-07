@@ -118,10 +118,18 @@
     }
   }
 
+  .card__price {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
   .price {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     color: $blue;
+    padding-right: 15px;
+    margin-right: auto;
   }
 
   .card__side {
@@ -140,11 +148,57 @@
       max-height: 90%;
     }
   }
+}
 
-  .card__favorite {
+.card__favorite {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+
+  label {
+    margin-bottom: 0;
+  }
+
+  svg {
+    fill: none;
+    transition: all 0.3s;
+
+    &:nth-of-type(2) {
+      display: none;
+    }
+  }
+
+  span {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  input {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+  @media (min-width: $media-tb) {
+    input:hover + span {
+      svg {
+        fill: $light-blue;
+      }
+    }
+  }
+
+  input:checked + span {
+    svg {
+      &:first-of-type {
+        display: none;
+      }
+
+      &:nth-of-type(2) {
+        display: block;
+      }
+    }
   }
 }
 
@@ -176,6 +230,7 @@
         height: 1px;
         width: 53px;
         background-color: $white;
+        transition: width 0.3s;
       }
     }
   }
@@ -196,6 +251,10 @@
     &:hover {
       .card__side .bg {
         transform: scale(1.03);
+      }
+
+      .card__main p::before {
+        width: 0;
       }
     }
   }
@@ -267,4 +326,16 @@
   @media (max-width: $media-tb) {
     padding-right: 15px !important;
   }
+}
+
+.card__sale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  font-size: 12px;
+  color: $white;
+  background: url("../img/icons/sale.png") 50% 50% no-repeat;
+  background-size: contain;
 }

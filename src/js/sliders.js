@@ -8,8 +8,8 @@ const sliders = () => {
     const mySwiper = new Swiper(".js-promo-slider.swiper-container", {
       direction: "horizontal",
       slidesPerView: 1,
-      spaceBetween: 20,
-      speed: 400,
+      spaceBetween: 0,
+      speed: 700,
       navigation: {
         nextEl: ".js-promo-slider .swiper-button-next",
         prevEl: ".js-promo-slider .swiper-button-prev",
@@ -18,17 +18,17 @@ const sliders = () => {
   }
 
   // Slider popular
-  const popular = document.querySelector(".js-slider-popular");
+  const popular = document.querySelector(".js-popular-slider");
 
   if (popular) {
-    const mySwiper = new Swiper(".js-slider-popular .swiper-container", {
+    const mySwiper = new Swiper(".js-popular-slider .swiper-container", {
       direction: "horizontal",
       slidesPerView: 1,
       spaceBetween: 20,
       speed: 400,
       navigation: {
-        nextEl: ".js-slider-popular .swiper-button-next",
-        prevEl: ".js-slider-popular .swiper-button-prev",
+        nextEl: ".js-popular-slider .swiper-button-next",
+        prevEl: ".js-popular-slider .swiper-button-prev",
       },
       breakpoints: {
         460: {

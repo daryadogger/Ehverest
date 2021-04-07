@@ -19,7 +19,65 @@
 </head>
 
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top"></div>
+      <div class="header__middle"></div>
+      <div class="header__bottom"></div>
+    </div>
+  </header>
   <main>
+    <div class="mb-90 promo">
+      <div class="container pt-4">
+        <div class="js-promo-slider swiper-container slider-promo mb-5">
+          <ul class="list swiper-wrapper">
+            <li class="swiper-slide bg" style="background-image: url(/img/promo.jpg);">
+              <h1 class="fw-600 color-white">Согреваем скидками</h1>
+              <p class="fs-20 color-white">До -40% на всю зимнюю коллекцию TERM'IT</p>
+              <a class="btn btn--blue mr-auto" href="#">Подробнее</a>
+            </li>
+            <li class="swiper-slide bg" style="background-image: url(/img/promo.jpg);">
+              <h1 class="fw-600 color-white">Согреваем скидками</h1>
+              <p class="fs-20 color-white">До -40% на всю зимнюю коллекцию TERM'IT</p>
+              <a class="btn btn--blue mr-auto" href="#">Подробнее</a>
+            </li>
+          </ul>
+          <div class="swiper-button-next">
+            <svg width="22" height="38">
+              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-prev">
+            <svg width="22" height="38">
+              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="promo__brands">
+          <ul class="list d-flex justify-content-between w-100 mr-5 pr-xl-4">
+            <li>
+              <img src="/img/brand-1.png" alt="">
+            </li>
+            <li class="d-none d-sm-flex">
+              <img src="/img/brand-2.png" alt="">
+            </li>
+            <li class="d-none d-sm-flex">
+              <img src="/img/brand-3.png" alt="">
+            </li>
+            <li class="d-none d-sm-flex">
+              <img src="/img/brand-4.png" alt="">
+            </li>
+            <li class="d-none d-md-flex">
+              <img src="/img/brand-5.png" alt="">
+            </li>
+            <li class="d-none d-lg-flex">
+              <img src="/img/brand-6.png" alt="">
+            </li>
+          </ul>
+          <a class="btn btn--blue" href="#">Все бренды</a>
+        </div>
+      </div>
+    </div>
     <div class="mb-90">
       <div class="container">
         <h2 class="mb-5">Каталог товаров</h2>
@@ -114,8 +172,8 @@
     <div class="mb-90">
       <div class="container">
         <h2 class="mb-5">Популярные товары</h2>
-        <div class="js-slider-popular">
-          <div class="swiper-container slider-popular">
+        <div class="js-popular-slider slider-popular">
+          <div class="swiper-container">
             <ul class="list swiper-wrapper">
               <li class="swiper-slide d-flex p-2">
                 <div class="card card--good">
@@ -130,7 +188,7 @@
                           <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
                         </svg>
                         <svg width="25" height="22">
-                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
                         </svg>
                       </span>
                     </label>
@@ -142,9 +200,11 @@
                     <p class="fs-14 fw-300 mb-2">Артикул:<span class="ml-1">2ZE8VE49J5</span>
                     </p>
                     <p class="fw-300 fs-18 color-black">Тюбинг Nordway, 89 см*</p>
-                    <div class="price">
-                      <span>5 999</span>
-                      <span>₽</span>
+                    <div class="card__price">
+                      <div class="price">
+                        <span>5 999</span>
+                        <span>₽</span>
+                      </div>
                     </div>
                   </a>
                   <div class="card__side p-3">
@@ -182,7 +242,7 @@
                           <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
                         </svg>
                         <svg width="25" height="22">
-                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
                         </svg>
                       </span>
                     </label>
@@ -194,9 +254,15 @@
                     <p class="fs-14 fw-300 mb-2">Артикул:<span class="ml-1">2ZE8VE49J5</span>
                     </p>
                     <p class="fw-300 fs-18 color-black">Коньки раздвижные детские Nordway Click-girl</p>
-                    <div class="price">
-                      <span>2 499</span>
-                      <span>₽</span>
+                    <div class="card__price">
+                      <div class="price">
+                        <span>2 499</span>
+                        <span>₽</span>
+                      </div>
+                      <div class="card__sale">
+                        <span>-20</span>
+                        <span>%</span>
+                      </div>
                     </div>
                   </a>
                   <div class="card__side p-3">
@@ -234,7 +300,7 @@
                           <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
                         </svg>
                         <svg width="25" height="22">
-                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
                         </svg>
                       </span>
                     </label>
@@ -246,9 +312,11 @@
                     <p class="fs-14 fw-300 mb-2">Артикул:<span class="ml-1">2ZE8VE49J5</span>
                     </p>
                     <p class="fw-300 fs-18 color-black">Сноуборд Termit Fastlanel</p>
-                    <div class="price">
-                      <span>10 999</span>
-                      <span>₽</span>
+                    <div class="card__price">
+                      <div class="price">
+                        <span>10 999</span>
+                        <span>₽</span>
+                      </div>
                     </div>
                   </a>
                   <div class="card__side p-3">
@@ -286,7 +354,7 @@
                           <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
                         </svg>
                         <svg width="25" height="22">
-                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
                         </svg>
                       </span>
                     </label>
@@ -298,9 +366,11 @@
                     <p class="fs-14 fw-300 mb-2">Артикул:<span class="ml-1">2ZE8VE49J5</span>
                     </p>
                     <p class="fw-300 fs-18 color-black">Коньки раздвижные детские Nordway Click-girl</p>
-                    <div class="price">
-                      <span>1 599</span>
-                      <span>₽</span>
+                    <div class="card__price">
+                      <div class="price">
+                        <span>1 599</span>
+                        <span>₽</span>
+                      </div>
                     </div>
                   </a>
                   <div class="card__side p-3">
