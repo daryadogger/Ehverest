@@ -23,6 +23,72 @@
     <div class="mb-90">
       <div class="container">
         <h2 class="mb-5">Каталог товаров</h2>
+        <div class="row mb-5">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <a class="card card--category card--lg d-block mb-4" href="#">
+              <div class="card__side">
+                <div class="bg h-100" style="background-image: url(/img/category-1.jpg);"></div>
+              </div>
+              <div class="card__main">
+                <p class="fw-600 h3">Обувь</p>
+              </div>
+            </a>
+            <div class="row">
+              <div class="col-sm-6 mb-4 mb-sm-0">
+                <a class="card card--category d-block" href="#">
+                  <div class="card__side">
+                    <div class="bg h-100" style="background-image: url(/img/category-2.jpg);"></div>
+                  </div>
+                  <div class="card__main">
+                    <p class="fw-600 h3">Рыбалка</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a class="card card--category d-block" href="#">
+                  <div class="card__side">
+                    <div class="bg h-100" style="background-image: url(/img/category-3.jpg);"></div>
+                  </div>
+                  <div class="card__main">
+                    <p class="fw-600 h3">Спорт</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-sm-6 mb-4">
+                <a class="card card--category d-block" href="#">
+                  <div class="card__side">
+                    <div class="bg h-100" style="background-image: url(/img/category-4.jpg);"></div>
+                  </div>
+                  <div class="card__main">
+                    <p class="fw-600 h3">Одежда</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <a class="card card--category d-block" href="#">
+                  <div class="card__side">
+                    <div class="bg h-100" style="background-image: url(/img/category-5.jpg);"></div>
+                  </div>
+                  <div class="card__main">
+                    <p class="fw-600 h3">Охота</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <a class="card card--category card--lg d-block" href="#">
+              <div class="card__side">
+                <div class="bg h-100" style="background-image: url(/img/category-6.jpg);"></div>
+              </div>
+              <div class="card__main">
+                <p class="fw-600 h3">Кемпинг</p>
+              </div>
+            </a>
+          </div>
+        </div>
         <div class="text-center">
           <a class="btn btn--blue" href="#">Все категории</a>
         </div>
@@ -31,7 +97,7 @@
     <div class="mb-90 bg-light-blue lead-block">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 pt-5 pb-5 d-flex justify-content-center">
+          <div class="col-sm-6 pt-5 pb-5 d-flex justify-content-center">
             <div class="lead-block__text">
               <p class="fs-14 mb-0 color-grey fw-300">Походная обувь</p>
               <h3 class="mb-2 fw-600">Новое поступление</h3>
@@ -39,7 +105,7 @@
               <a class="btn btn--blue" href="#">В каталог</a>
             </div>
           </div>
-          <div class="col-md-6 pb-3">
+          <div class="col-sm-6 pb-3">
             <div class="photo bg h-100 bg--contain d-block" style="background-image: url(/img/lead-1.png);"></div>
           </div>
         </div>
@@ -55,6 +121,19 @@
                 <div class="card card--good">
                   <div class="marker marker--pink">
                     <span>Новинка</span>
+                  </div>
+                  <div class="card__favorite">
+                    <label>
+                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                      <span>
+                        <svg width="25" height="22">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                        <svg width="25" height="22">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                      </span>
+                    </label>
                   </div>
                   <a class="link d-block card__main p-3" href="#">
                     <div class="card__img mb-2">
@@ -95,6 +174,19 @@
                   <div class="marker marker--purple">
                     <span>Все покупают</span>
                   </div>
+                  <div class="card__favorite">
+                    <label>
+                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                      <span>
+                        <svg width="25" height="22">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                        <svg width="25" height="22">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
                   <a class="link d-block card__main p-3" href="#">
                     <div class="card__img mb-2">
                       <img src="/img/good-2.png" alt="">
@@ -134,6 +226,19 @@
                   <div class="marker marker--peach">
                     <span>Лучшая цена</span>
                   </div>
+                  <div class="card__favorite">
+                    <label>
+                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                      <span>
+                        <svg width="25" height="22">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                        <svg width="25" height="22">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
                   <a class="link d-block card__main p-3" href="#">
                     <div class="card__img mb-2">
                       <img src="/img/good-3.png" alt="">
@@ -172,6 +277,19 @@
                 <div class="card card--good">
                   <div class="marker marker--pink">
                     <span>Новинка</span>
+                  </div>
+                  <div class="card__favorite">
+                    <label>
+                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                      <span>
+                        <svg width="25" height="22">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                        <svg width="25" height="22">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                      </span>
+                    </label>
                   </div>
                   <a class="link d-block card__main p-3" href="#">
                     <div class="card__img mb-2">
@@ -222,31 +340,37 @@
         </div>
       </div>
     </div>
-    <div class="mb-90">
+    <div class="mb-90 news">
       <div class="container">
         <h2 class="mb-5">Новости</h2>
         <div class="row">
-          <div class="col-lg-9">
+          <div class="col-lg-8 col-xl-9 mb-4 mb-lg-0">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-sm-6 mb-4 mb-sm-0 news__col">
                 <a class="card card--news card--lg" href="#">
-                  <div class="card__side bg" style="background-image: url(/img/image-1.jpg);"></div>
+                  <div class="card__side">
+                    <div class="bg h-100" style="background-image: url(/img/image-1.jpg);"></div>
+                  </div>
                   <div class="card__main p-4">
                     <p class="fw-600 fs-20 color-white">Изменился режим работы магазина 30-31 декабря</p>
                     <p class="date">25.12.2020</p>
                   </div>
                 </a>
               </div>
-              <div class="col-md-6">
-                <a class="card card--news mb-4" href="#">
-                  <div class="card__side bg" style="background-image: url(/img/image-2.jpg);"></div>
+              <div class="col-sm-6">
+                <a class="card card--news mb-md-4" href="#">
+                  <div class="card__side">
+                    <div class="bg h-100" style="background-image: url(/img/image-2.jpg);"></div>
+                  </div>
                   <div class="card__main p-4">
                     <p class="fw-600 fs-20 color-white">Подарочный сертификат - лучший подарок!</p>
                     <p class="date">25.12.2020</p>
                   </div>
                 </a>
-                <a class="card card--news" href="#">
-                  <div class="card__side bg" style="background-image: url(/img/image-3.jpg);"></div>
+                <a class="card card--news d-none d-md-flex" href="#">
+                  <div class="card__side">
+                    <div class="bg h-100" style="background-image: url(/img/image-3.jpg);"></div>
+                  </div>
                   <div class="card__main p-4">
                     <p class="fw-600 fs-20 color-white">Новые условия работы</p>
                     <p class="date">25.12.2020</p>
@@ -255,26 +379,30 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-4 col-xl-3">
             <div class="bg-light-blue border-radius p-4">
               <p class="fw-600 fs-20 mb-4">Также рекомендуем</p>
-              <ul class="list mb-4">
-                <li>
-                  <a class="link link--black d-block pb-4 pt-2" href="#">Как выбрать удочку</a>
-                </li>
-                <li>
-                  <a class="link link--black d-block pb-4 pt-2" href="#">Рассказываем все про горные лыжи</a>
-                </li>
-                <li>
-                  <a class="link link--black d-block pb-4 pt-2" href="#">Домашние тренировки</a>
-                </li>
-                <li>
-                  <a class="link link--black d-block pb-4 pt-2" href="#">Спортивные мероприятия в нашем магазине</a>
-                </li>
-                <li>
-                  <a class="link link--black d-block pb-4 pt-2" href="#">Как выбрать сноуборд</a>
-                </li>
-              </ul>
+              <div class="recommendation">
+                <ul class="list list--border">
+                  <li>
+                    <a class="link link--black d-block" href="#">Как выбрать удочку</a>
+                  </li>
+                  <li>
+                    <a class="link link--black d-block" href="#">Рассказываем все про горные лыжи</a>
+                  </li>
+                  <li>
+                    <a class="link link--black d-block" href="#">Домашние тренировки</a>
+                  </li>
+                </ul>
+                <ul class="list list--border mb-4">
+                  <li>
+                    <a class="link link--black d-block" href="#">Спортивные мероприятия в нашем магазине</a>
+                  </li>
+                  <li>
+                    <a class="link link--black d-block" href="#">Как выбрать сноуборд</a>
+                  </li>
+                </ul>
+              </div>
               <div class="text-center">
                 <a class="btn btn--blue" href="#">Все статьи</a>
               </div>
@@ -289,7 +417,7 @@
       <div class="container pt-4 pb-4">
         <form action="/" method="POST">
           <div class="row">
-            <div class="col-md-6 d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center mb-4 mb-md-0">
               <div class="footer__icon">
                 <img src="/img/icons/letter.svg" alt="" />
               </div>
@@ -300,7 +428,12 @@
             </div>
             <div class="col-md-6 fieldset">
               <input class="mr-30" type="email" placeholder="Введите ваш email" id="input-subscribe" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required="required" />
-              <button class="btn btn--blue" type="submit">Подписаться</button>
+              <button class="btn btn--blue" type="submit">
+                <span class="d-none d-sm-block d-md-none d-lg-block">Подписаться</span>
+                <svg class="d-sm-none d-md-block d-lg-none" width="18" height="22">
+                  <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </form>
@@ -310,12 +443,14 @@
       <div class="container pt-5 pb-5">
         <div class="row">
           <div class="col-lg-3 col-md-4 col-sm-6">
-            <a class="link link--black d-block pb-3" href="/">
+            <a class="link link--black d-block pb-3 logo" href="/">
               <img class="mb-3" src="/img/logo.png" alt="" />
-              <p>Эверест груп, спортивный магазин для всей семьи</p>
+              <p>Эверест груп, спортивный
+                <br> магазин для всей семьи
+              </p>
             </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3 mb-md-0">
             <p class="fs-20 fw-600 mb-4">Сервис и помощь</p>
             <ul class="list">
               <li>
@@ -341,7 +476,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3 mb-md-0">
             <p class="fs-20 fw-600 mb-4">Компания</p>
             <ul class="list">
               <li>
@@ -368,10 +503,10 @@
             <p class="fs-20 fw-600 mb-4">Контакты</p>
             <a class="link link--black d-block pb-4 fs-18" href="tel:+78000000000">8 800-000-00-00</a>
             <a class="link link--black d-block pb-4 fs-18" href="mailto:sales@everest.ru">
-              <span>sales@everest.ru</span>
-              <span class="d-inline-block fs-14 color-grey pl-5">с 8:00 до 22:00</span>
+              <span class="d-block">sales@everest.ru</span>
+              <span class="d-block fs-14 color-grey pl-5">с 8:00 до 22:00</span>
             </a>
-            <a class="link link--black d-block pb-5 fw-600" href="#">Оставьте отзыв на flamp.ru</a>
+            <a class="link link--black d-block pb-4 pb-md-5 fw-600" href="#">Оставьте отзыв на flamp.ru</a>
             <a class="link" href="http://sportlandia.ru/" target="_blank">
               <img src="/img/logo-sportlandia.png" alt="" />
               <span class="fs-14 color-grey">Официальный партнер</span>

@@ -18,13 +18,13 @@
 
   &:active {
     color: $white;
-    background-color: #0059fe;
+    background-color: $blue-2;
   }
 
   @media (min-width: $media-tb) {
     &:hover {
       color: $white;
-      background-color: #0059fe;
+      background-color: $blue-2;
     }
   }
 }

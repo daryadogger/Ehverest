@@ -32,6 +32,41 @@
 
   .fieldset {
     justify-content: flex-end;
+
+    @media (max-width: $media-tb) {
+      input {
+        max-width: 100%;
+      }
+    }
+  }
+
+  label {
+    @media (max-width: $media-md) {
+      h3 {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: $media-sm) {
+      h3 {
+        font-size: 22px;
+      }
+
+      .fs-18 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    @media (max-width: $media-md) {
+      padding: 10px 22px;
+    }
   }
 }
 
@@ -44,4 +79,40 @@
   height: 80px;
   background-color: $blue;
   margin-right: 1.5rem;
+  flex-shrink: 0;
+
+  img {
+    max-width: 75%;
+  }
+
+  @media (max-width: $media-md) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (max-width: $media-sm) {
+    display: none;
+  }
+}
+
+.footer .logo {
+  @media (max-width: $media-td) {
+    img {
+      max-width: 155px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    img {
+      max-width: 125px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
 }

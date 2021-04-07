@@ -15,13 +15,65 @@ block main
       .container
         h2.mb-5 Каталог товаров
 
+        .row.mb-5
+          .col-md-6.mb-4.mb-md-0
+            a.card.card--category.card--lg.d-block.mb-4(href="#")
+              .card__side
+                .bg.h-100(style="background-image: url(/img/category-1.jpg);")
+
+              .card__main
+                p.fw-600.h3 Обувь
+
+            .row
+              .col-sm-6.mb-4.mb-sm-0
+                a.card.card--category.d-block(href="#")
+                  .card__side
+                    .bg.h-100(style="background-image: url(/img/category-2.jpg);")
+
+                  .card__main
+                    p.fw-600.h3 Рыбалка
+
+              .col-sm-6
+                a.card.card--category.d-block(href="#")
+                  .card__side
+                    .bg.h-100(style="background-image: url(/img/category-3.jpg);")
+
+                  .card__main
+                    p.fw-600.h3 Спорт
+
+          .col-md-6
+            .row
+              .col-sm-6.mb-4
+                a.card.card--category.d-block(href="#")
+                  .card__side
+                    .bg.h-100(style="background-image: url(/img/category-4.jpg);")
+
+                  .card__main
+                    p.fw-600.h3 Одежда
+
+              .col-sm-6.mb-4
+                a.card.card--category.d-block(href="#")
+                  .card__side
+                    .bg.h-100(style="background-image: url(/img/category-5.jpg);")
+
+                  .card__main
+                    p.fw-600.h3 Охота
+
+            a.card.card--category.card--lg.d-block(href="#")
+              .card__side
+                .bg.h-100(style="background-image: url(/img/category-6.jpg);")
+
+              .card__main
+                p.fw-600.h3 Кемпинг
+
+
         .text-center
           a.btn.btn--blue(href="#") Все категории
 
     .mb-90.bg-light-blue.lead-block
       .container
         .row
-          .col-md-6.pt-5.pb-5.d-flex.justify-content-center
+          .col-sm-6.pt-5.pb-5.d-flex.justify-content-center
             .lead-block__text
               p.fs-14.mb-0.color-grey.fw-300 Походная обувь
               h3.mb-2.fw-600 Новое поступление
@@ -29,7 +81,7 @@ block main
               a.btn.btn--blue(href="#") В каталог
 
 
-          .col-md-6.pb-3
+          .col-sm-6.pb-3
             .photo.bg.h-100.bg--contain.d-block(style="background-image: url(/img/lead-1.png);")
 
     .mb-90
@@ -43,6 +95,15 @@ block main
                 .card.card--good
                   .marker.marker--pink
                     span Новинка
+                  .card__favorite
+                    label
+                      input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                      span
+                        svg(width="25" height="22")
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                        svg(width="25" height="22")
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
+
                   a.link.d-block.card__main.p-3(href="#")
                     .card__img.mb-2
                       img(src="/img/good-1.png", alt="")
@@ -74,6 +135,14 @@ block main
                 .card.card--good
                   .marker.marker--purple
                     span Все покупают
+                  .card__favorite
+                    label
+                      input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                      span
+                        svg(width="25" height="22")
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                        svg(width="25" height="22")
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
                   a.link.d-block.card__main.p-3(href="#")
                     .card__img.mb-2
                       img(src="/img/good-2.png", alt="")
@@ -105,6 +174,14 @@ block main
                 .card.card--good
                   .marker.marker--peach
                     span Лучшая цена
+                  .card__favorite
+                    label
+                      input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                      span
+                        svg(width="25" height="22")
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                        svg(width="25" height="22")
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
                   a.link.d-block.card__main.p-3(href="#")
                     .card__img.mb-2
                       img(src="/img/good-3.png", alt="")
@@ -136,6 +213,14 @@ block main
                 .card.card--good
                   .marker.marker--pink
                     span Новинка
+                  .card__favorite
+                    label
+                      input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                      span
+                        svg(width="25" height="22")
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                        svg(width="25" height="22")
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
                   a.link.d-block.card__main.p-3(href="#")
                     .card__img.mb-2
                       img(src="/img/good-4.png", alt="")
@@ -172,51 +257,57 @@ block main
               use(xlink:href="img/sprite/sprite.svg#icon-arrow")
 
 
-    .mb-90
+    .mb-90.news
       .container
         h2.mb-5 Новости
 
         .row
-          .col-lg-9
+          .col-lg-8.col-xl-9.mb-4.mb-lg-0
             .row
-              .col-md-6
+              .col-sm-6.mb-4.mb-sm-0.news__col
                 a.card.card--news.card--lg(href="#")
-                  .card__side.bg(style="background-image: url(/img/image-1.jpg);")
+                  .card__side
+                    .bg.h-100(style="background-image: url(/img/image-1.jpg);")
 
                   .card__main.p-4
                     p.fw-600.fs-20.color-white Изменился режим работы магазина 30-31 декабря
                     p.date 25.12.2020
 
-              .col-md-6
-                a.card.card--news.mb-4(href="#")
-                  .card__side.bg(style="background-image: url(/img/image-2.jpg);")
+              .col-sm-6
+                a.card.card--news.mb-md-4(href="#")
+                  .card__side
+                    .bg.h-100(style="background-image: url(/img/image-2.jpg);")
 
                   .card__main.p-4
                     p.fw-600.fs-20.color-white Подарочный сертификат - лучший подарок!
                     p.date 25.12.2020
 
-                a.card.card--news(href="#")
-                  .card__side.bg(style="background-image: url(/img/image-3.jpg);")
+                a.card.card--news.d-none.d-md-flex(href="#")
+                  .card__side
+                    .bg.h-100(style="background-image: url(/img/image-3.jpg);")
 
                   .card__main.p-4
                     p.fw-600.fs-20.color-white Новые условия работы
                     p.date 25.12.2020
 
 
-          .col-lg-3
+          .col-lg-4.col-xl-3
             .bg-light-blue.border-radius.p-4
               p.fw-600.fs-20.mb-4 Также рекомендуем
-              ul.list.mb-4
-                li
-                  a.link.link--black.d-block.pb-4.pt-2(href="#") Как выбрать удочку
-                li
-                  a.link.link--black.d-block.pb-4.pt-2(href="#") Рассказываем все про горные лыжи
-                li
-                  a.link.link--black.d-block.pb-4.pt-2(href="#") Домашние тренировки
-                li
-                  a.link.link--black.d-block.pb-4.pt-2(href="#") Спортивные мероприятия в нашем магазине
-                li
-                  a.link.link--black.d-block.pb-4.pt-2(href="#") Как выбрать сноуборд
+
+              .recommendation
+                ul.list.list--border
+                  li
+                    a.link.link--black.d-block(href="#") Как выбрать удочку
+                  li
+                    a.link.link--black.d-block(href="#") Рассказываем все про горные лыжи
+                  li
+                    a.link.link--black.d-block(href="#") Домашние тренировки
+                ul.list.list--border.mb-4
+                  li
+                    a.link.link--black.d-block(href="#") Спортивные мероприятия в нашем магазине
+                  li
+                    a.link.link--black.d-block(href="#") Как выбрать сноуборд
               .text-center
                 a.btn.btn--blue(href="#") Все статьи
 

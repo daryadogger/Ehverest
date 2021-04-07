@@ -12,11 +12,31 @@
 
 .swiper-button-prev,
 .swiper-button-next {
+  outline: none;
   color: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
 
   @media (min-width: $media-tb) {
     &:hover {
       color: $black;
     }
+  }
+}
+
+.swiper-button-next {
+  right: -25px;
+  left: auto;
+
+  @media (max-width: $media-md) {
+    right: 10px;
+  }
+}
+
+.swiper-button-prev {
+  right: auto;
+  left: -25px;
+
+  @media (max-width: $media-md) {
+    left: 10px;
   }
 }

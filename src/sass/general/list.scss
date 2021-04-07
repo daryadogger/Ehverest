@@ -20,3 +20,25 @@
     }
   }
 }
+
+.list--border {
+  li {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+    &:first-of-type {
+      border: none;
+    }
+
+    @media (max-width: $media-td) {
+      border: none;
+    }
+
+    a {
+      padding: 15px 0 21px;
+
+      @media (max-width: $media-td) {
+        padding: 9px 0 10px;
+      }
+    }
+  }
+}

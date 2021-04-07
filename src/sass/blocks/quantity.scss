@@ -25,12 +25,12 @@
   outline: none !important;
 
   &:active {
-    background-color: $blue;
+    background-color: $blue-2;
   }
 
   @media (min-width: $media-tb) {
     &:hover {
-      background-color: $blue;
+      background-color: $blue-2;
     }
   }
 }
