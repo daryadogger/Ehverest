@@ -20,6 +20,16 @@
     border: none;
     color: $black;
     border: 1px solid $blue;
+
+    &::placeholder {
+      color: rgba($black, 0.5);
+    }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        border-color: $blue-2;
+      }
+    }
   }
 
   textarea {

@@ -10287,6 +10287,17 @@ button, input, optgroup, select, textarea {
     border: none;
     color: #000000;
     border: 1px solid #3E7AEA; }
+    .fieldset input::-webkit-input-placeholder, .fieldset textarea::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.5); }
+    .fieldset input::-moz-placeholder, .fieldset textarea::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.5); }
+    .fieldset input::placeholder,
+    .fieldset textarea::placeholder {
+      color: rgba(0, 0, 0, 0.5); }
+    @media (min-width: 767px) {
+      .fieldset input:hover,
+      .fieldset textarea:hover {
+        border-color: #0059fe; } }
   .fieldset textarea {
     resize: none; }
 
@@ -10406,12 +10417,15 @@ small {
 
 .header {
   width: 100%;
-  padding: 1rem 0 0.8rem;
+  padding: 1rem 0 0;
   background-color: #ffffff;
   z-index: 8;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06); }
+  @media (max-width: 991px) {
+    .header {
+      padding-top: 0.8rem; } }
 
 .header__top {
   display: -webkit-box;
@@ -10420,7 +10434,7 @@ small {
           justify-content: space-between;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  margin-bottom: 2rem; }
+  margin-bottom: 1.3rem; }
   @media (max-width: 991px) {
     .header__top {
       margin-bottom: 0; } }
@@ -10431,7 +10445,17 @@ small {
   -webkit-box-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-bottom: 2rem; }
+  @media (max-width: 991px) {
+    .header__middle {
+      margin-bottom: 0.8rem; } }
+
+.header__bottom {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center; }
 
 .header .logo {
   display: -webkit-box;
@@ -10446,48 +10470,44 @@ small {
   @media (min-width: 767px) {
     .header .logo:hover .logo__side {
       color: #0059fe; } }
+  @media (max-width: 1199px) {
+    .header .logo img {
+      width: 140px; } }
+  @media (max-width: 1099px) {
+    .header .logo img {
+      width: 130px; } }
+  @media (max-width: 1023px) {
+    .header .logo img {
+      width: 100px; }
+    .header .logo .logo__side {
+      font-size: 14px; } }
 
 .header__form {
   width: 100%; }
   .header__form input {
+    width: 305px;
     padding-left: 45px;
     background: url("../img/icons/search.svg") 13px 50% no-repeat;
     background-size: 18px 19px; }
+    @media (max-width: 1199px) {
+      .header__form input {
+        width: 100%; } }
 
 .goods-number {
   position: absolute;
-  right: -7px;
+  right: -3px;
   top: -5px;
   background-color: #3E7AEA;
   color: #ffffff;
-  font-size: 12px;
-  border-radius: 3px;
-  padding: 3px 6px; }
-  @media (max-width: 991px) {
-    .goods-number {
-      font-size: 11px;
-      top: 4px; } }
+  font-size: 9px;
+  border-radius: 4px;
+  padding: 0.5px 7px; }
 
 .tel {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 22px;
   flex-shrink: 0; }
-  @media (max-width: 991px) {
-    .tel {
-      font-size: 21px;
-      margin: 0 auto !important; } }
-  @media (max-width: 575px) {
-    .tel {
-      font-size: 18px; } }
-  @media (max-width: 539px) {
-    .tel {
-      margin-left: 10px !important;
-      margin-right: 6px !important; }
-      .tel span {
-        display: none; }
-      .tel svg {
-        width: 25px;
-        height: 25px; } }
+  .tel span + span {
+    letter-spacing: -0.2px; }
 
 .header.scroll {
   padding-top: 0.5rem;
@@ -10559,6 +10579,38 @@ small {
 .user-nav {
   display: -webkit-box;
   display: flex; }
+  .user-nav a {
+    position: relative; }
+
+.header .nav ul li {
+  font-size: 20px;
+  margin-right: 40px; }
+  .header .nav ul li:last-child {
+    margin-right: 0; }
+  @media (max-width: 1199px) {
+    .header .nav ul li {
+      font-size: 20px;
+      margin-right: 30px; }
+      .header .nav ul li:last-child {
+        margin-right: 0; } }
+  @media (max-width: 1099px) {
+    .header .nav ul li {
+      font-size: 20px;
+      margin-right: 25px; }
+      .header .nav ul li:last-child {
+        margin-right: 0; } }
+  @media (max-width: 1079px) {
+    .header .nav ul li {
+      font-size: 19px;
+      margin-right: 25px; }
+      .header .nav ul li:last-child {
+        margin-right: 0; } }
+  @media (max-width: 1023px) {
+    .header .nav ul li {
+      font-size: 18px;
+      margin-right: 25px; }
+      .header .nav ul li:last-child {
+        margin-right: 0; } }
 
 .promo__brands {
   display: -webkit-box;

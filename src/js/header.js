@@ -19,18 +19,6 @@ const headerScroll = () => {
 
     $(window).on("scroll", scrollHeader);
     $(document).on("ready", scrollHeader);
-
-
-    //Добавляет отступ на страницах для фиксированного хедера
-    function checkHeaderHeight() {
-      const value = $header.outerHeight();
-      const main = $("main");
-
-      main.css("padding-top", value);
-    }
-    // checkHeaderHeight();
-
-    $(window).on("resize", checkHeaderHeight);
   }
 
 };

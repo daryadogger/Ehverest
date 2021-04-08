@@ -1,7 +1,7 @@
 mixin header(data)
   header.header(class!=attributes.class)
     .container
-      .header__top
+      .header__top.d-none.d-lg-flex
         .d-flex.pr-4
           .d-flex.align-items-start.pr-4
             img.mr-1(src="/img/icons/pin.svg", alt="")
@@ -28,16 +28,18 @@ mixin header(data)
               label.fieldset
                 input(type="text" name="search" placeholder="Поиск по сайту" autoComplete="off")
 
-          a.tel.link.d-block.fs-22.link--black(href="tel:+78004324354")
+          a.tel.link.d-block.link--black(href="tel:+78004324354")
             span.d-block 8 800 432-43-54
             span.d-block.fs-13.color-grey Спортивный магазин для всей семьи
 
         .user-nav
-          a.link.link--black.d-block.pr-4(href="#")
+          a.link.link--black.d-block.pr-3.mr-4(href="#")
+            span.goods-number 0
             svg(width="25" height="25")
               use(xlink:href="img/sprite/sprite.svg#icon-basket-2")
 
-          a.link.link--black.d-block.pr-4(href="#")
+          a.link.link--black.d-block.pr-3.mr-4(href="#")
+            span.goods-number 0
             svg(width="25" height="25")
               use(xlink:href="img/sprite/sprite.svg#icon-heart")
 
@@ -45,5 +47,26 @@ mixin header(data)
             svg(width="25" height="25")
               use(xlink:href="img/sprite/sprite.svg#icon-user")
 
-      .header__bottom
+      .header__bottom.d-none.d-lg-flex
+        a.btn.btn--transparent.d-block.mb-2.fs-20.mr-4(href="#") Каталог
+
+        .nav
+          ul.list.d-flex
+            li
+              a.link.link--black.d-block.pb-2(href="#") Обувь
+            li
+              a.link.link--black.d-block.pb-2(href="#") Одежда
+            li
+              a.link.link--black.d-block.pb-2(href="#") Охота
+            li
+              a.link.link--black.d-block.pb-2(href="#") Рыбалка
+            li
+              a.link.link--black.d-block.pb-2(href="#") Спорт
+            li
+              a.link.link--black.d-block.pb-2(href="#") Кемпинг
+            li
+              a.link.link--black.d-block.pb-2(href="#") Зоотовары
+            li
+              a.link.link--black.d-block.pb-2(href="#") Фейрверки
+
 
