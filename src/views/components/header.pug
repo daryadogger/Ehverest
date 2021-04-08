@@ -2,14 +2,48 @@ mixin header(data)
   header.header(class!=attributes.class)
     .container
       .header__top
-        .d-flex
-          .d-flex.align-items-start
+        .d-flex.pr-4
+          .d-flex.align-items-start.pr-4
             img.mr-1(src="/img/icons/pin.svg", alt="")
-            span Камень на оби
+            span.fs-14.fw-300 Камень на оби
+
+          a.link.d-block.fs-14.fw-300.link--black.pr-4(href="#") Адреса магазинов
+          a.link.d-block.fs-14.fw-300.link--black(href="#") Оплата и доставка
 
         .d-flex
+          a.link.d-block.fs-14.fw-300.link--black.pr-4(href="#") О нас
+          a.link.d-block.fs-14.fw-300.link--black.pr-4(href="#") Новости
+          a.link.d-block.fs-14.fw-300.link--black.pr-4(href="#") Контакты
+          a.link.d-block.fs-14.fw-300.link--black(href="#") Вакансии
 
       .header__middle
+        a.logo.link(href="#")
+          img.mr-3(src="/img/logo.svg", alt="")
+          .logo__side
+            p.mb-0 Официальный<br> партнер спортландии
+
+        .d-flex.align-items-center
+          .header__form.d-none.d-lg-block.mr-4
+            form(action="/" method="GET")
+              label.fieldset
+                input(type="text" name="search" placeholder="Поиск по сайту" autoComplete="off")
+
+          a.tel.link.d-block.fs-22.link--black(href="tel:+78004324354")
+            span.d-block 8 800 432-43-54
+            span.d-block.fs-13.color-grey Спортивный магазин для всей семьи
+
+        .user-nav
+          a.link.link--black.d-block.pr-4(href="#")
+            svg(width="25" height="25")
+              use(xlink:href="img/sprite/sprite.svg#icon-basket-2")
+
+          a.link.link--black.d-block.pr-4(href="#")
+            svg(width="25" height="25")
+              use(xlink:href="img/sprite/sprite.svg#icon-heart")
+
+          a.link.link--black.d-block(href="#")
+            svg(width="25" height="25")
+              use(xlink:href="img/sprite/sprite.svg#icon-user")
 
       .header__bottom
 
