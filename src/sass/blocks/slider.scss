@@ -15,6 +15,8 @@
   outline: none;
   color: rgba(0, 0, 0, 0.4);
   z-index: 2;
+  top: 54%;
+  margin: 0;
   transition: all 0.3s;
 
   @media (min-width: $media-tb) {
@@ -49,19 +51,56 @@
     right: 15px;
     left: auto;
     color: $white;
+
+    @media (max-width: $media-tb) {
+      right: 5px;
+    }
+
+    @media (max-width: $media-sm) {
+      right: -5px;
+
+      svg {
+        height: 25px;
+      }
+    }
   }
 
   .swiper-button-prev {
     right: auto;
     left: 15px;
     color: $white;
+
+    @media (max-width: $media-tb) {
+      left: 5px;
+    }
+
+    @media (max-width: $media-sm) {
+      left: -5px;
+
+      svg {
+        height: 25px;
+      }
+    }
   }
 }
 
 .slider-promo .swiper-slide {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
   height: 480px;
   padding: 40px 80px;
+
+  @media (max-width: $media-td) {
+    padding: 40px 60px;
+  }
+
+  @media (max-width: $media-tb) {
+    padding: 20px 45px;
+  }
+
+  @media (max-width: $media-sm) {
+    padding: 20px 15px;
+  }
 }

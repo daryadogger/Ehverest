@@ -36,15 +36,15 @@ block main
           ul.list.d-flex.justify-content-between.w-100.mr-5.pr-xl-4
             li
               img(src="/img/brand-1.png", alt="")
-            li.d-none.d-sm-flex
+            li
               img(src="/img/brand-2.png", alt="")
-            li.d-none.d-sm-flex
+            li
               img(src="/img/brand-3.png", alt="")
-            li.d-none.d-sm-flex
+            li
               img(src="/img/brand-4.png", alt="")
-            li.d-none.d-md-flex
+            li
               img(src="/img/brand-5.png", alt="")
-            li.d-none.d-lg-flex
+            li
               img(src="/img/brand-6.png", alt="")
 
           a.btn.btn--blue(href="#") Все бренды
@@ -111,7 +111,7 @@ block main
     .mb-90.bg-light-blue.lead-block
       .container
         .row
-          .col-sm-6.pt-5.pb-5.d-flex.justify-content-center
+          .col-sm-6.pt-4.pt-md-5.pb-4.pb-md-5.d-flex.justify-content-center
             .lead-block__text
               p.fs-14.mb-0.color-grey.fw-300 Походная обувь
               h3.mb-2.fw-600 Новое поступление
@@ -119,7 +119,7 @@ block main
               a.btn.btn--blue(href="#") В каталог
 
 
-          .col-sm-6.pb-3
+          .col-sm-6.pb-lg-3.order-1
             .photo.bg.h-100.bg--contain.d-block(style="background-image: url(/img/lead-1.png);")
 
     .mb-90
@@ -147,7 +147,7 @@ block main
                       img(src="/img/good-1.png", alt="")
                     p.fs-14.fw-300.mb-2 Артикул:
                       span.ml-1 2ZE8VE49J5
-                    p.fw-300.fs-18.color-black Тюбинг Nordway, 89 см*
+                    p.fw-300.fs-18.color-black.card__title Тюбинг Nordway, 89 см*
 
                     .card__price
                       .price
@@ -187,12 +187,16 @@ block main
                       img(src="/img/good-2.png", alt="")
                     p.fs-14.fw-300.mb-2 Артикул:
                       span.ml-1 2ZE8VE49J5
-                    p.fw-300.fs-18.color-black Коньки раздвижные детские Nordway Click-girl
+                    p.fw-300.fs-18.color-black.card__title Коньки раздвижные детские Nordway Click-girl
 
-                    .card__price
-                      .price
-                        span 2 499
-                        span ₽
+                    .card__prices-block
+                      .card__prices
+                        .card__price
+                          span 2 499
+                          span ₽
+                        .card__price.card__price--old
+                          span 6 999
+                          span ₽
 
                       .card__sale
                         span -20
@@ -231,12 +235,14 @@ block main
                       img(src="/img/good-3.png", alt="")
                     p.fs-14.fw-300.mb-2 Артикул:
                       span.ml-1 2ZE8VE49J5
-                    p.fw-300.fs-18.color-black Сноуборд Termit Fastlanel
+                    p.fw-300.fs-18.color-black.card__title Сноуборд Termit Fastlanel
 
-                    .card__price
-                      .price
-                        span 10 999
-                        span ₽
+                    .card__prices-block
+                      .card__prices
+                        .card__price
+                          span 10 999
+                          span ₽
+
 
                   .card__side.p-3
                     .d-flex.quantity.js-quantity.align-items-center
@@ -271,12 +277,13 @@ block main
                       img(src="/img/good-4.png", alt="")
                     p.fs-14.fw-300.mb-2 Артикул:
                       span.ml-1 2ZE8VE49J5
-                    p.fw-300.fs-18.color-black Коньки раздвижные детские Nordway Click-girl
+                    p.fw-300.fs-18.color-black.card__title Коньки раздвижные детские Nordway Click-girl
 
-                    .card__price
-                      .price
-                        span 1 599
-                        span ₽
+                    .card__prices-block
+                      .card__prices
+                        .card__price
+                          span 1 999
+                          span ₽
 
                   .card__side.p-3
                     .d-flex.quantity.js-quantity.align-items-center
@@ -293,6 +300,89 @@ block main
                     a.link.basket(href="#")
                       svg(width='23' height='23')
                         use(xlink:href="img/sprite/sprite.svg#icon-basket")
+
+              li.swiper-slide.d-flex.p-2
+                .card.card--good
+                  .marker.marker--pink
+                    span Новинка
+                  .card__favorite
+                    label
+                      input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                      span
+                        svg(width="25" height="22")
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                        svg(width="25" height="22")
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                  a.link.d-block.card__main.p-3(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-4.png", alt="")
+                    p.fs-14.fw-300.mb-2 Артикул:
+                      span.ml-1 2ZE8VE49J5
+                    p.fw-300.fs-18.color-black.card__title Коньки раздвижные детские Nordway Click-girl
+
+                    .card__prices-block
+                      .card__prices
+                        .card__price
+                          span 15 999
+                          span ₽
+
+                  .card__side.p-3
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-6" id="quantity-input-6")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                    a.link.basket(href="#")
+                      svg(width='23' height='23')
+                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
+
+              li.swiper-slide.d-flex.p-2
+                .card.card--good
+                  .marker.marker--pink
+                    span Новинка
+                  .card__favorite
+                    label
+                      input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                      span
+                        svg(width="25" height="22")
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                        svg(width="25" height="22")
+                          use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                  a.link.d-block.card__main.p-3(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-4.png", alt="")
+                    p.fs-14.fw-300.mb-2 Артикул:
+                      span.ml-1 2ZE8VE49J5
+                    p.fw-300.fs-18.color-black.card__title Коньки раздвижные детские Nordway Click-girl
+
+                    .card__prices-block
+                      .card__prices
+                        .card__price
+                          span 10 999
+                          span ₽
+
+                  .card__side.p-3
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-7" id="quantity-input-7")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                    a.link.basket(href="#")
+                      svg(width='23' height='23')
+                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
+
 
 
           .swiper-button-next

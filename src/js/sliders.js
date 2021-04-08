@@ -31,11 +31,11 @@ const sliders = () => {
         prevEl: ".js-popular-slider .swiper-button-prev",
       },
       breakpoints: {
-        460: {
+        470: {
           slidesPerView: 2,
           spaceBetween: 15,
         },
-        660: {
+        700: {
           slidesPerView: 3,
           spaceBetween: 15,
         },

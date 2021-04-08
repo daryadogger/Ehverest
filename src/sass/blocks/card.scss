@@ -5,6 +5,14 @@
   border-radius: 15px;
 }
 
+.lead-block {
+  .order-1 {
+    @media (max-width: $media-sm) {
+      order: -1;
+    }
+  }
+}
+
 .lead-block__text {
   max-width: 365px;
 }
@@ -48,6 +56,7 @@
 
     .bg {
       transition: transform 0.5s;
+      will-change: transform;
     }
   }
 
@@ -118,24 +127,55 @@
     }
   }
 
-  .card__price {
+  .card__title {
+    height: 50px;
+    overflow: hidden;
+  }
+
+  .card__prices-block {
     position: relative;
     display: flex;
     align-items: center;
+    padding-top: 8px;
+  }
+  .card__prices {
+    padding-right: 45px;
+    margin-right: auto;
   }
 
-  .price {
+  .card__price {
     font-size: 22px;
     font-weight: 600;
     color: $blue;
-    padding-right: 15px;
-    margin-right: auto;
+
+    &--old {
+      position: absolute;
+      top: -11px;
+      left: 0;
+      font-size: 16px;
+      color: $grey;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 1.5px;
+        width: 100%;
+        left: 0;
+        top: 46%;
+        transform: rotate(-11deg);
+        background-color: #FB7988;
+      }
+    }
   }
 
   .card__side {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .card__main {
+    padding-bottom: 0 !important;
   }
 
   .card__img {
@@ -244,6 +284,7 @@
 
     .bg {
       transition: transform 0.5s;
+      will-change: transform;
     }
   }
 
@@ -329,6 +370,9 @@
 }
 
 .card__sale {
+  position: absolute;
+  right: 0;
+  top: -7px;
   display: flex;
   align-items: center;
   justify-content: center;
