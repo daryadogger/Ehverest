@@ -29,9 +29,6 @@ const deskMenu = () => {
     if ($headerMenu.hasClass("show")) {
       close();
     } else {
-      if ($(".header").hasClass("scroll")) {
-        $('html, body').stop().animate({scrollTop : 0}, 300);
-      }
       open();
     }
   });

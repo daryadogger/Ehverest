@@ -17,7 +17,7 @@
   transition: transform 0.6s ease;
   padding-top: 130px;
   padding-bottom: 50px;
-  background-color: #F7F7F7;
+  background-color: $white;
 
   &.is-show {
     transform: translate(0);

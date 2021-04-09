@@ -1,7 +1,7 @@
 .header {
-  // position: fixed;
-  // left: 0;
-  // top: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
   padding: 1rem 0 0.3rem;
   background-color: $white;
@@ -31,6 +31,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2rem;
+  transition: all 0.2s;
 
   @media (max-width: $media-td) {
     margin-bottom: 0.8rem;
@@ -45,6 +46,10 @@
 .header .logo {
   display: flex;
   align-items: center;
+
+  img {
+    transition: all 0.2s;
+  }
 
   .logo__side {
     font-size: 15px;
@@ -128,15 +133,24 @@
 .header.scroll {
   padding-top: 0.5rem;
   padding-bottom: 0.2rem;
-  box-shadow: 2px 2px 15px rgba(23, 23, 23, 0.1);
+  box-shadow: 2px 2px 20px rgba(4, 20, 106, 0.12);
 
-  // .header__top {
-  //   margin-bottom: 0.3rem;
-  // }
+  .header__middle {
+    margin-bottom: 0.5rem;
+  }
 
-  // .logo img {
-  //   height: 55px;
-  // }
+  .header__top {
+    margin-bottom: 0.8rem;
+  }
+
+  .logo img {
+    width: 105px;
+  }
+
+  .btn--transparent {
+    margin-bottom: 5px;
+    padding: 8px 35px;
+  }
 }
 
 .burger {
@@ -186,7 +200,7 @@
     }
 
     .burger__span--1 {
-      transform: translateY(5px) rotate(45deg);
+      transform: translateY(9px) rotate(45deg);
     }
 
     .burger__span--2 {
@@ -194,7 +208,7 @@
     }
 
     .burger__span--3 {
-      transform: translateY(-11px) rotate(-45deg);
+      transform: translateY(-16px) rotate(-45deg);
     }
 
   @media not all and (min-resolution:.001dpcm)

@@ -2,7 +2,7 @@ extends layouts/layout
 include components/header
 include components/footer
 include components/desk-menu
-//- include components/menu
+include components/menu
 
 block title
   | Главная страница
@@ -33,22 +33,22 @@ block main
             svg(width="22" height="38")
               use(xlink:href="img/sprite/sprite.svg#icon-arrow")
 
-        .promo__brands
-          ul.list.d-flex.justify-content-between.w-100.mr-5.pr-xl-4
-            li
-              img(src="/img/brand-1.png", alt="")
-            li
-              img(src="/img/brand-2.png", alt="")
-            li
-              img(src="/img/brand-3.png", alt="")
-            li
-              img(src="/img/brand-4.png", alt="")
-            li
-              img(src="/img/brand-5.png", alt="")
-            li
-              img(src="/img/brand-6.png", alt="")
+        //- .promo__brands
+        //-   ul.list.d-flex.justify-content-between.w-100.mr-5.pr-xl-4
+        //-     li
+        //-       img(src="/img/brand-1.png", alt="")
+        //-     li
+        //-       img(src="/img/brand-2.png", alt="")
+        //-     li
+        //-       img(src="/img/brand-3.png", alt="")
+        //-     li
+        //-       img(src="/img/brand-4.png", alt="")
+        //-     li
+        //-       img(src="/img/brand-5.png", alt="")
+        //-     li
+        //-       img(src="/img/brand-6.png", alt="")
 
-          a.btn.btn--blue(href="#") Все бренды
+        //-   a.btn.btn--blue(href="#") Все бренды
 
     .mb-90
       .container
@@ -458,6 +458,6 @@ block footer
       use(xlink:href="img/sprite/sprite.svg#icon-arrow")
 
 block modal
-  //- +menu()
+  +menu()
   +desk-menu()
 
