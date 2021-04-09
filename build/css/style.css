@@ -10290,6 +10290,14 @@ button, input, optgroup, select, textarea {
     .link--black:hover {
       color: #3E7AEA; } }
 
+.link--blue {
+  color: #3E7AEA; }
+  .link--blue:active {
+    color: #0059fe; }
+  @media (min-width: 767px) {
+    .link--blue:hover {
+      color: #0059fe; } }
+
 .link--grey {
   color: rgba(0, 0, 0, 0.5); }
   .link--grey:active {
@@ -10364,6 +10372,12 @@ button, input, optgroup, select, textarea {
     .fieldset input::placeholder,
     .fieldset textarea::placeholder {
       color: rgba(0, 0, 0, 0.5); }
+    .fieldset input:focus,
+    .fieldset textarea:focus {
+      background-color: #ffffff; }
+    .fieldset input.has-value,
+    .fieldset textarea.has-value {
+      background-color: #ffffff; }
     @media (min-width: 767px) {
       .fieldset input:hover,
       .fieldset textarea:hover {
@@ -10541,30 +10555,36 @@ small {
   display: flex;
   -webkit-box-align: center;
           align-items: center; }
-  .header .logo img {
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s; }
+  .header .logo svg {
+    height: auto;
+    -webkit-transition: color 0.3s, -webkit-transform 0.3s;
+    transition: color 0.3s, -webkit-transform 0.3s;
+    transition: color 0.3s, transform 0.3s;
+    transition: color 0.3s, transform 0.3s, -webkit-transform 0.3s; }
   .header .logo .logo__side {
     font-size: 15px;
     padding: 7px 10px;
     border-left: 1px solid #3E7AEA;
     color: #3E7AEA; }
   @media (min-width: 767px) {
+    .header .logo:hover svg {
+      -webkit-transform: translateY(-2px);
+              transform: translateY(-2px); }
     .header .logo:hover .logo__side {
       color: #0059fe; } }
   @media (max-width: 1199px) {
-    .header .logo img {
+    .header .logo svg {
       width: 140px; } }
   @media (max-width: 1099px) {
-    .header .logo img {
+    .header .logo svg {
       width: 130px; } }
   @media (max-width: 1023px) {
-    .header .logo img {
+    .header .logo svg {
       width: 100px; }
     .header .logo .logo__side {
       font-size: 14px; } }
   @media (max-width: 575px) {
-    .header .logo img {
+    .header .logo svg {
       width: 75px; } }
 
 .header__form {
@@ -10603,7 +10623,7 @@ small {
     margin-bottom: 0.5rem; }
   .header.scroll .header__top {
     margin-bottom: 0.8rem; }
-  .header.scroll .logo img {
+  .header.scroll .logo svg {
     width: 105px; }
   .header.scroll .btn--transparent {
     margin-bottom: 5px;
@@ -10718,6 +10738,17 @@ small {
             align-items: center;
     flex-shrink: 0; }
 
+.promo h1 {
+  -webkit-transform: translate(-10px);
+          transform: translate(-10px);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s transform 0.2s;
+  transition: opacity 0.3s transform 0.2s; }
+  .promo h1.active {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0); }
+
 .card {
   width: 100%;
   border: none;
@@ -10819,7 +10850,9 @@ small {
         height: 43px; } }
   .card--good .card__title {
     height: 50px;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
   .card--good .card__prices-block {
     position: relative;
     display: -webkit-box;
@@ -10859,6 +10892,9 @@ small {
             justify-content: space-between; }
   .card--good .card__main {
     padding-bottom: 0 !important; }
+    @media (min-width: 767px) {
+      .card--good .card__main:hover .card__title {
+        color: #0059fe; } }
   .card--good .card__img {
     display: -webkit-box;
     display: flex;
@@ -11029,7 +11065,7 @@ small {
   transition: -webkit-transform 0.6s ease;
   transition: transform 0.6s ease;
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
-  padding-top: 130px;
+  padding-top: 100px;
   padding-bottom: 50px;
   background-color: #ffffff; }
   .menu.is-show {
@@ -11067,6 +11103,17 @@ small {
 .fancybox-stage ::-webkit-scrollbar-thumb {
   background-color: rgba(152, 152, 155, 0.15);
   border-radius: 5px; }
+
+.menu__form {
+  width: 100%; }
+  .menu__form input {
+    width: 305px;
+    padding-left: 45px;
+    background: url("../img/icons/search.svg") 13px 50% no-repeat;
+    background-size: 18px 19px; }
+    @media (max-width: 1199px) {
+      .menu__form input {
+        width: 100%; } }
 
 .desk-menu {
   display: none;
@@ -11203,7 +11250,7 @@ small {
   @media (min-width: 767px) {
     .swiper-button-prev:hover,
     .swiper-button-next:hover {
-      color: #000000; } }
+      color: #0059fe; } }
 
 .swiper-button-next {
   right: -25px;
@@ -11221,10 +11268,16 @@ small {
 
 .slider-promo {
   border-radius: 15px; }
+  .slider-promo .swiper-button-next,
+  .slider-promo .swiper-button-prev {
+    color: #ffffff; }
+    @media (min-width: 767px) {
+      .slider-promo .swiper-button-next:hover,
+      .slider-promo .swiper-button-prev:hover {
+        color: #0059fe; } }
   .slider-promo .swiper-button-next {
     right: 15px;
-    left: auto;
-    color: #ffffff; }
+    left: auto; }
     @media (max-width: 767px) {
       .slider-promo .swiper-button-next {
         right: 5px; } }
@@ -11235,8 +11288,7 @@ small {
           height: 25px; } }
   .slider-promo .swiper-button-prev {
     right: auto;
-    left: 15px;
-    color: #ffffff; }
+    left: 15px; }
     @media (max-width: 767px) {
       .slider-promo .swiper-button-prev {
         left: 5px; } }
@@ -11334,7 +11386,7 @@ small {
   background-color: #3E7AEA;
   margin-right: 1.5rem;
   flex-shrink: 0; }
-  .footer__icon img {
+  .footer__icon svg {
     max-width: 75%; }
   @media (max-width: 1199px) {
     .footer__icon {
@@ -11344,17 +11396,30 @@ small {
     .footer__icon {
       display: none; } }
 
+.footer .logo svg {
+  height: auto;
+  color: #3E7AEA;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.footer .logo p {
+  color: #000000; }
+
 @media (max-width: 991px) {
-  .footer .logo img {
+  .footer .logo svg {
     max-width: 155px; }
   .footer .logo p {
     font-size: 15px; } }
 
 @media (max-width: 575px) {
-  .footer .logo img {
+  .footer .logo svg {
     max-width: 125px; }
   .footer .logo p {
     font-size: 14px; } }
+
+@media (min-width: 767px) {
+  .footer .logo:hover svg {
+    color: #0059fe; } }
 
 .marker {
   position: absolute;

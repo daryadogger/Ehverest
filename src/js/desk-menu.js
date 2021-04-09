@@ -29,6 +29,7 @@ const deskMenu = () => {
     if ($headerMenu.hasClass("show")) {
       close();
     } else {
+      resizeTopCoordinate();
       open();
     }
   });
@@ -43,6 +44,11 @@ const deskMenu = () => {
   resizeTopCoordinate();
 
   $(window).on("resize", resizeTopCoordinate);
+  $(document).on("scroll", function () {
+    if ($headerMenu.hasClass("show")) {
+      close();
+    }
+  });
 
   // Закрытие header-menu при нажатии вне меню
   $(document).on('mouseup', function(evt) {

@@ -16,6 +16,20 @@
   }
 }
 
+.link--blue {
+  color: $blue;
+
+  &:active {
+    color: $blue-2;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $blue-2;
+    }
+  }
+}
+
 .link--grey {
   color: $grey;
 

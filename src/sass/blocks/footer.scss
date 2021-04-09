@@ -80,7 +80,7 @@
   margin-right: 1.5rem;
   flex-shrink: 0;
 
-  img {
+  svg {
     max-width: 75%;
   }
 
@@ -95,8 +95,18 @@
 }
 
 .footer .logo {
+  svg {
+    height: auto;
+    color: $blue;
+    transition: all 0.3s;
+  }
+
+  p {
+    color: $black;
+  }
+
   @media (max-width: $media-td) {
-    img {
+    svg {
       max-width: 155px;
     }
 
@@ -106,12 +116,21 @@
   }
 
   @media (max-width: $media-sm) {
-    img {
+    svg {
       max-width: 125px;
     }
 
     p {
       font-size: 14px;
+    }
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      svg {
+        color: $blue-2;
+        // transform: translateY(-2px);
+      }
     }
   }
 }

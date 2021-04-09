@@ -21,7 +21,7 @@
 
   @media (min-width: $media-tb) {
     &:hover {
-      color: $black;
+      color: $blue-2;
     }
   }
 }
@@ -47,10 +47,20 @@
 .slider-promo {
   border-radius: 15px;
 
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $white;
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        color: $blue-2;
+      }
+    }
+  }
+
   .swiper-button-next {
     right: 15px;
     left: auto;
-    color: $white;
 
     @media (max-width: $media-tb) {
       right: 5px;
@@ -68,7 +78,6 @@
   .swiper-button-prev {
     right: auto;
     left: 15px;
-    color: $white;
 
     @media (max-width: $media-tb) {
       left: 5px;

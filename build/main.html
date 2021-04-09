@@ -38,8 +38,10 @@
         </div>
       </div>
       <div class="header__middle">
-        <a class="logo link" href="#">
-          <img class="mr-3" src="/img/logo.svg" alt="" />
+        <a class="logo link link--blue" href="#">
+          <svg class="mr-3" width="159" height="85">
+            <use xlink:href="img/sprite/sprite.svg#icon-logo"></use>
+          </svg>
           <div class="logo__side d-none d-md-block">
             <p class="mb-0">Официальный
               <br> партнер спортландии
@@ -715,8 +717,10 @@
       <div class="container pt-5 pb-5">
         <div class="row">
           <div class="col-lg-3 col-md-4 col-sm-6">
-            <a class="link link--black d-block pb-3 logo" href="/">
-              <img class="mb-3" src="/img/logo-2.svg" alt="" />
+            <a class="link d-block pb-3 logo" href="/">
+              <svg class="mb-3" width="185" height="100">
+                <use xlink:href="img/sprite/sprite.svg#icon-logo-2"></use>
+              </svg>
               <p>Эверест груп, спортивный
                 <br> магазин для всей семьи
               </p>
@@ -804,7 +808,77 @@
     </svg>
   </a>
   <div class="menu">
-    <div class="container"></div>
+    <div class="container d-flex flex-column">
+      <a class="btn btn--blue mr-auto mb-4" href="#">В каталог</a>
+      <div class="nav mb-3">
+        <ul class="list d-flex flex-column">
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Обувь</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Одежда</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Охота</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Рыбалка</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Спорт</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Кемпинг</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Зоотовары</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Фейрверки</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg-light-blue mb-4">
+      <div class="container pt-4 pb-4">
+        <ul class="list d-flex flex-column">
+          <li>
+            <div class="d-flex align-items-start pb-3">
+              <img class="mr-1" src="/img/icons/pin.svg" alt="" />
+              <span class="fs-18 fw-300">Камень на оби</span>
+            </div>
+          </li>
+          <li>
+            <a class="link d-block fs-18 fw-300 link--black pb-3" href="#">Адреса магазинов</a>
+          </li>
+          <li>
+            <a class="link d-block fs-18 fw-300 link--black pb-3" href="#">Оплата и доставка</a>
+          </li>
+          <li>
+            <a class="link d-block fs-18 fw-300 link--black pb-3" href="#">О нас</a>
+          </li>
+          <li>
+            <a class="link d-block fs-18 fw-300 link--black pb-3" href="#">Новости</a>
+          </li>
+          <li>
+            <a class="link d-block fs-18 fw-300 link--black pb-3" href="#">Контакты</a>
+          </li>
+          <li>
+            <a class="link d-block fs-18 fw-300 link--black" href="#">Вакансии</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <a class="tel link d-block link--black fw-600 mb-4" href="tel:+78004324354">8 800 432-43-54</a>
+      <div class="menu__form d-block mr-4">
+        <form action="/" method="GET">
+          <label class="fieldset">
+            <input type="text" name="search" placeholder="Поиск по сайту" autoComplete="off" />
+          </label>
+        </form>
+      </div>
+    </div>
   </div>
   <div class="desk-menu js-desk-menu">
     <div class="container">

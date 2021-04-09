@@ -25,6 +25,14 @@
       color: rgba($black, 0.5);
     }
 
+    &:focus {
+      background-color: $white;
+    }
+
+    &.has-value {
+      background-color: $white;
+    }
+
     @media (min-width: $media-tb) {
       &:hover {
         border-color: $blue-2;

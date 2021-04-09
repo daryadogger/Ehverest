@@ -130,6 +130,7 @@
   .card__title {
     height: 50px;
     overflow: hidden;
+    transition: all 0.3s;
   }
 
   .card__prices-block {
@@ -176,6 +177,14 @@
 
   .card__main {
     padding-bottom: 0 !important;
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        .card__title {
+          color: $blue-2;
+        }
+      }
+    }
   }
 
   .card__img {

@@ -4,7 +4,7 @@ const headerScroll = () => {
   const $header = $(".header");
 
   if ($header) {
-
+    
     // Header меняет цвета при скролле. Он уже fixed изначально
     const scrollHeader = () => {
       const introTop = main.getBoundingClientRect().top;

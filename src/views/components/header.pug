@@ -17,8 +17,9 @@ mixin header(data)
           a.link.d-block.fs-14.fw-300.link--black(href="#") Вакансии
 
       .header__middle
-        a.logo.link(href="#")
-          img.mr-3(src="/img/logo.svg", alt="")
+        a.logo.link.link--blue(href="#")
+          svg.mr-3(width="159" height="85")
+            use(xlink:href="img/sprite/sprite.svg#icon-logo")
           .logo__side.d-none.d-md-block
             p.mb-0 Официальный<br> партнер спортландии
 
