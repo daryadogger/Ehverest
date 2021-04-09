@@ -148,8 +148,22 @@
     margin-bottom: 0.8rem;
   }
 
-  .logo svg {
-    width: 105px;
+  .logo {
+    svg {
+      width: 105px;
+    }
+
+    @media (max-width: $media-dt) {
+      svg {
+        width: 100px;
+      }
+    }
+
+    @media (max-width: $media-sm) {
+      svg {
+        width: 75px;
+      }
+    }
   }
 
   .btn--transparent {

@@ -33,26 +33,27 @@ block main
             svg(width="22" height="38")
               use(xlink:href="img/sprite/sprite.svg#icon-arrow")
 
-        //- .promo__brands
-        //-   ul.list.d-flex.justify-content-between.w-100.mr-5.pr-xl-4
-        //-     li
-        //-       img(src="/img/brand-1.png", alt="")
-        //-     li
-        //-       img(src="/img/brand-2.png", alt="")
-        //-     li
-        //-       img(src="/img/brand-3.png", alt="")
-        //-     li
-        //-       img(src="/img/brand-4.png", alt="")
-        //-     li
-        //-       img(src="/img/brand-5.png", alt="")
-        //-     li
-        //-       img(src="/img/brand-6.png", alt="")
+        .promo__brands
+          .js-brands-slider.swiper-container.slider-brands.w-100.mr-sm-5
+            ul.list.swiper-wrapper
+              li.swiper-slide
+                img(src="/img/brand-1.png" width="72" height="24")
+              li.swiper-slide
+                img(src="/img/brand-2.png" width="68" height="23")
+              li.swiper-slide
+                img(src="/img/brand-3.png" width="52" height="35")
+              li.swiper-slide
+                img(src="/img/brand-4.png" width="122" height="25")
+              li.swiper-slide
+                img(src="/img/brand-5.png" width="124" height="24")
+              li.swiper-slide
+                img(src="/img/brand-6.png" width="120" height="33")
 
-        //-   a.btn.btn--blue(href="#") Все бренды
+          a.btn.btn--blue(href="#") Все бренды
 
     .mb-90
       .container
-        h2.mb-5 Каталог товаров
+        h2.mb-5.wow.fadeInLeftSmall(data-wow-delay="200ms") Каталог товаров
 
         .row.mb-5
           .col-md-6.mb-4.mb-md-0
@@ -125,7 +126,7 @@ block main
 
     .mb-90
       .container
-        h2.mb-5 Популярные товары
+        h2.mb-5.wow.fadeInLeftSmall(data-wow-delay="200ms") Популярные товары
 
         .js-popular-slider.slider-popular
           .swiper-container
@@ -393,10 +394,9 @@ block main
             svg(width="22" height="38")
               use(xlink:href="img/sprite/sprite.svg#icon-arrow")
 
-
     .mb-90.news
       .container
-        h2.mb-5 Новости
+        h2.mb-5.wow.fadeInLeftSmall(data-wow-delay="200ms") Новости
 
         .row
           .col-lg-8.col-xl-9.mb-4.mb-lg-0

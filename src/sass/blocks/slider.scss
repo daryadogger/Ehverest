@@ -113,3 +113,17 @@
     padding: 20px 15px;
   }
 }
+
+.slider-brands {
+  pointer-events: none;
+  user-select: none;
+}
+
+.swiper-container.slider-brands {
+  margin-left: 0;
+
+  .list {
+    display: flex;
+    align-items: center;
+  }
+}

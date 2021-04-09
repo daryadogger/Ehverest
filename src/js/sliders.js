@@ -39,6 +39,36 @@ const sliders = () => {
       });
       slideChangeHandler(500);
     });
+
+    const brandsSwiper = new Swiper(".js-brands-slider.swiper-container", {
+      direction: "horizontal",
+      slidesPerView: 1,
+      spaceBetween: 20,
+      speed: 600,
+      centered: true,
+      breakpoints: {
+        410: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        490: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        700: {
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+        950: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+        991: {
+          slidesPerView: 6,
+          spaceBetween: 30,
+        },
+      },
+    });
   }
 
   // Slider popular
