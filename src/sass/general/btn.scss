@@ -29,6 +29,66 @@
   }
 }
 
+.btn--transparent {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px 35px;
+  color: $blue;
+  outline: none !important;
+
+  &:active {
+    color: $blue;
+    background-color: $light-blue-2;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $blue;
+      background-color: $light-blue-2;
+    }
+  }
+}
+
+.btn--transparent .burger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 17px;
+  height: 17px;
+  transition: 0.3s;
+
+  span {
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: $blue;
+    transition: 0.45s;
+    margin-bottom: 2px;
+    border-radius: 3px;
+  }
+}
+
+.btn--transparent.active {
+  background-color: $light-blue-2;
+
+  .burger__span--1 {
+    width: 18px;
+    transform: translateY(5px) rotate(45deg);
+  }
+
+  .burger__span--2 {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  .burger__span--3 {
+    transform: translateY(-8px) rotate(-45deg);
+    width: 18px;
+  }
+}
+
 //Наверх кнопка
 .btn-up {
   position: fixed;

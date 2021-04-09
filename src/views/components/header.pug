@@ -19,7 +19,7 @@ mixin header(data)
       .header__middle
         a.logo.link(href="#")
           img.mr-3(src="/img/logo.svg", alt="")
-          .logo__side
+          .logo__side.d-none.d-md-block
             p.mb-0 Официальный<br> партнер спортландии
 
         .d-flex.align-items-center
@@ -28,27 +28,41 @@ mixin header(data)
               label.fieldset
                 input(type="text" name="search" placeholder="Поиск по сайту" autoComplete="off")
 
-          a.tel.link.d-block.link--black(href="tel:+78004324354")
+          a.tel.link.d-none.d-sm-block.link--black(href="tel:+78004324354")
             span.d-block 8 800 432-43-54
             span.d-block.fs-13.color-grey Спортивный магазин для всей семьи
 
         .user-nav
-          a.link.link--black.d-block.pr-3.mr-4(href="#")
+          a.tel.link.d-block.d-sm-none.link--black.mr-2(href="tel:+78004324354")
+            svg(width="25" height="25")
+              use(xlink:href="img/sprite/sprite.svg#icon-tel")
+
+          a.link.link--black.d-block.pr-3.mr-2.mr-sm-3.mr-md-4(href="#")
             span.goods-number 0
             svg(width="25" height="25")
               use(xlink:href="img/sprite/sprite.svg#icon-basket-2")
 
-          a.link.link--black.d-block.pr-3.mr-4(href="#")
+          a.link.link--black.d-block.pr-3.mr-2.mr-sm-3.mr-md-4(href="#")
             span.goods-number 0
             svg(width="25" height="25")
               use(xlink:href="img/sprite/sprite.svg#icon-heart")
 
-          a.link.link--black.d-block(href="#")
+          a.link.link--black.d-block.mr-3.mr-md-4.mr-lg-0(href="#")
             svg(width="25" height="25")
               use(xlink:href="img/sprite/sprite.svg#icon-user")
 
+          button.btn.burger.js-open-menu.d-lg-none(type="button" aria-label="Меню")
+            span.burger__span.burger__span--1
+            span.burger__span.burger__span--2
+            span.burger__span.burger__span--3.mb-0
+
       .header__bottom.d-none.d-lg-flex
-        a.btn.btn--transparent.d-block.mb-2.fs-20.mr-4(href="#") Каталог
+        button.btn.btn--transparent.btn--catalog.js-desk-menu-btn.mb-2.mr-3(type="button")
+          .burger.mr-2
+            span.burger__span.burger__span--1
+            span.burger__span.burger__span--2
+            span.burger__span.burger__span--3.mb-0
+          span Каталог
 
         .nav
           ul.list.d-flex

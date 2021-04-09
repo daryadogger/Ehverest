@@ -40,7 +40,7 @@
       <div class="header__middle">
         <a class="logo link" href="#">
           <img class="mr-3" src="/img/logo.svg" alt="" />
-          <div class="logo__side">
+          <div class="logo__side d-none d-md-block">
             <p class="mb-0">Официальный
               <br> партнер спортландии
             </p>
@@ -54,33 +54,50 @@
               </label>
             </form>
           </div>
-          <a class="tel link d-block link--black" href="tel:+78004324354">
+          <a class="tel link d-none d-sm-block link--black" href="tel:+78004324354">
             <span class="d-block">8 800 432-43-54</span>
             <span class="d-block fs-13 color-grey">Спортивный магазин для всей семьи</span>
           </a>
         </div>
         <div class="user-nav">
-          <a class="link link--black d-block pr-3 mr-4" href="#">
+          <a class="tel link d-block d-sm-none link--black mr-2" href="tel:+78004324354">
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite/sprite.svg#icon-tel"></use>
+            </svg>
+          </a>
+          <a class="link link--black d-block pr-3 mr-2 mr-sm-3 mr-md-4" href="#">
             <span class="goods-number">0</span>
             <svg width="25" height="25">
               <use xlink:href="img/sprite/sprite.svg#icon-basket-2"></use>
             </svg>
           </a>
-          <a class="link link--black d-block pr-3 mr-4" href="#">
+          <a class="link link--black d-block pr-3 mr-2 mr-sm-3 mr-md-4" href="#">
             <span class="goods-number">0</span>
             <svg width="25" height="25">
               <use xlink:href="img/sprite/sprite.svg#icon-heart"></use>
             </svg>
           </a>
-          <a class="link link--black d-block" href="#">
+          <a class="link link--black d-block mr-3 mr-md-4 mr-lg-0" href="#">
             <svg width="25" height="25">
               <use xlink:href="img/sprite/sprite.svg#icon-user"></use>
             </svg>
           </a>
+          <button class="btn burger js-open-menu d-lg-none" type="button" aria-label="Меню">
+            <span class="burger__span burger__span--1"></span>
+            <span class="burger__span burger__span--2"></span>
+            <span class="burger__span burger__span--3 mb-0"></span>
+          </button>
         </div>
       </div>
       <div class="header__bottom d-none d-lg-flex">
-        <a class="btn btn--transparent d-block mb-2 fs-20 mr-4" href="#">Каталог</a>
+        <button class="btn btn--transparent btn--catalog js-desk-menu-btn mb-2 mr-3" type="button">
+          <div class="burger mr-2">
+            <span class="burger__span burger__span--1"></span>
+            <span class="burger__span burger__span--2"></span>
+            <span class="burger__span burger__span--3 mb-0"></span>
+          </div>
+          <span>Каталог</span>
+        </button>
         <div class="nav">
           <ul class="list d-flex">
             <li>
@@ -809,6 +826,110 @@
       <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
     </svg>
   </a>
+  <div class="desk-menu js-desk-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p class="desk-menu__title">Обувь</p>
+          <ul class="list list--dot">
+            <li>
+              <a class="link link--black d-block" href="#">Обувь</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Одежда</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Охота</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Рыбалка</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Спорт</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Кемпинг</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Зоотовары</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Фейрверки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p class="desk-menu__title">Одежда</p>
+          <ul class="list list--dot">
+            <li>
+              <a class="link link--black d-block" href="#">Обувь</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Одежда</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Охота</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Рыбалка</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Спорт</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Кемпинг</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Зоотовары</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Фейрверки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p class="desk-menu__title">Фейрверки</p>
+          <ul class="list list--dot">
+            <li>
+              <a class="link link--black d-block" href="#">Обувь</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Одежда</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Охота</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Рыбалка</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Спорт</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p class="desk-menu__title">Охота</p>
+          <ul class="list list--dot">
+            <li>
+              <a class="link link--black d-block" href="#">Обувь</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Одежда</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Охота</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Рыбалка</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Спорт</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/vendor.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
