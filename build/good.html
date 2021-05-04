@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cтраница товара</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top d-none d-lg-flex">
+        <div class="d-flex pr-4">
+          <div class="d-flex align-items-start pr-4">
+            <img class="mr-1" src="/img/icons/pin.svg" alt="" />
+            <span class="fs-14 fw-300">Камень на оби</span>
+          </div>
+          <a class="link d-block fs-14 fw-300 link--black pr-4" href="#">Адреса магазинов</a>
+          <a class="link d-block fs-14 fw-300 link--black" href="#">Оплата и доставка</a>
+        </div>
+        <div class="d-flex">
+          <a class="link d-block fs-14 fw-300 link--black pr-4" href="#">О нас</a>
+          <a class="link d-block fs-14 fw-300 link--black pr-4" href="#">Новости</a>
+          <a class="link d-block fs-14 fw-300 link--black pr-4" href="#">Контакты</a>
+          <a class="link d-block fs-14 fw-300 link--black" href="#">Вакансии</a>
+        </div>
+      </div>
+      <div class="header__middle">
+        <a class="logo link link--blue" href="#">
+          <svg class="mr-3" width="159" height="85">
+            <use xlink:href="img/sprite/sprite.svg#icon-logo"></use>
+          </svg>
+          <div class="logo__side d-none d-md-block">
+            <p class="mb-0">Официальный
+              <br> партнер спортландии
+            </p>
+          </div>
+        </a>
+        <div class="d-flex align-items-center">
+          <div class="header__form d-none d-lg-block mr-4">
+            <form action="/" method="GET">
+              <label class="fieldset">
+                <input type="text" name="search" placeholder="Поиск по сайту" autoComplete="off" />
+              </label>
+            </form>
+          </div>
+          <a class="tel link d-none d-sm-block link--black" href="tel:+78004324354">
+            <span class="d-block">8 800 432-43-54</span>
+            <span class="d-block fs-13 color-grey">Спортивный магазин для всей семьи</span>
+          </a>
+        </div>
+        <div class="user-nav">
+          <a class="tel link d-block d-sm-none link--black mr-2" href="tel:+78004324354">
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite/sprite.svg#icon-tel"></use>
+            </svg>
+          </a>
+          <a class="link link--black d-block pr-3 mr-2 mr-sm-3 mr-md-4" href="#">
+            <span class="goods-number">0</span>
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite/sprite.svg#icon-basket-2"></use>
+            </svg>
+          </a>
+          <a class="link link--black d-block pr-3 mr-2 mr-sm-3 mr-md-4" href="#">
+            <span class="goods-number">0</span>
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite/sprite.svg#icon-heart"></use>
+            </svg>
+          </a>
+          <a class="link link--black d-block mr-3 mr-md-4 mr-lg-0" href="#">
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite/sprite.svg#icon-user"></use>
+            </svg>
+          </a>
+          <button class="btn burger js-open-menu d-lg-none" type="button" aria-label="Меню">
+            <span class="burger__span burger__span--1"></span>
+            <span class="burger__span burger__span--2"></span>
+            <span class="burger__span burger__span--3 mb-0"></span>
+          </button>
+        </div>
+      </div>
+      <div class="header__bottom d-none d-lg-flex">
+        <button class="btn btn--transparent btn--catalog js-desk-menu-btn mr-3" type="button">
+          <div class="burger mr-2">
+            <span class="burger__span burger__span--1"></span>
+            <span class="burger__span burger__span--2"></span>
+            <span class="burger__span burger__span--3 mb-0"></span>
+          </div>
+          <span>Каталог</span>
+        </button>
+        <div class="nav">
+          <ul class="list d-flex">
+            <li>
+              <a class="link link--black d-block pb-2" href="#">Обувь</a>
+            </li>
+            <li>
+              <a class="link link--black d-block pb-2" href="#">Одежда</a>
+            </li>
+            <li>
+              <a class="link link--black d-block pb-2" href="#">Охота</a>
+            </li>
+            <li>
+              <a class="link link--black d-block pb-2" href="#">Рыбалка</a>
+            </li>
+            <li>
+              <a class="link link--black d-block pb-2" href="#">Спорт</a>
+            </li>
+            <li>
+              <a class="link link--black d-block pb-2" href="#">Кемпинг</a>
+            </li>
+            <li>
+              <a class="link link--black d-block pb-2" href="#">Зоотовары</a>
+            </li>
+            <li>
+              <a class="link link--black d-block pb-2" href="#">Фейрверки</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="pt-5 pb-5">
+      <div class="container">
+        <ul class="list breadcrumbs d-none d-md-flex mb-4">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="/">
+              <span class="breadcrumbs__span">Главная</span>
+              <span class="breadcrumbs__arrow">/</span>
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              <span class="breadcrumbs__span">Каталог</span>
+              <span class="breadcrumbs__arrow">/</span>
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              <span class="breadcrumbs__span">Обувь</span>
+              <span class="breadcrumbs__arrow">/</span>
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              <span class="breadcrumbs__span">Женская обувь</span>
+              <span class="breadcrumbs__arrow">/</span>
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current">Ботинки утепленные Merrell Storm Trekker 6</a>
+          </li>
+        </ul>
+        <h3 class="mb-2 wow fadeInLeftSmall" data-wow-delay="200ms">Ботинки утепленные Merrell Storm Trekker 6</h3>
+      </div>
+    </div>
+    <div class="mb-90">
+      <div class="container"></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container pt-4 pb-4">
+        <form action="/" method="POST">
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-center mb-4 mb-md-0">
+              <div class="footer__icon">
+                <img src="/img/icons/letter.svg" alt="" />
+              </div>
+              <label class="mb-0" for="input-subscribe">
+                <h3 class="fw-600 mb-1 wow fadeInLeftSmall" data-wow-delay="200ms">Подпишитесь на рассылку</h3>
+                <p class="fs-18 fw-300 mb-0">Узнавайте первым о выгодных предложениях!</p>
+              </label>
+            </div>
+            <div class="col-md-6 fieldset">
+              <input class="mr-30" type="email" placeholder="Введите ваш email" id="input-subscribe" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required="required" />
+              <button class="btn btn--blue" type="submit">
+                <span class="d-none d-sm-block d-md-none d-lg-block">Подписаться</span>
+                <svg class="d-sm-none d-md-block d-lg-none" width="18" height="22">
+                  <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer__middle">
+      <div class="container pt-5 pb-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a class="link d-block pb-3 logo" href="/">
+              <svg class="mb-3" width="185" height="100">
+                <use xlink:href="img/sprite/sprite.svg#icon-logo-2"></use>
+              </svg>
+              <p>Эверест груп, спортивный
+                <br> магазин для всей семьи
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3 mb-md-0">
+            <p class="fs-20 fw-600 mb-4">Сервис и помощь</p>
+            <ul class="list">
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Личный кабинет</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Оплата и доставка</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Обмен и возврат</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Сервисные услуги</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Гарантийное обслуживание</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Отзывы и предложения</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Юр. лицам</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3 mb-md-0">
+            <p class="fs-20 fw-600 mb-4">Компания</p>
+            <ul class="list">
+              <li>
+                <a class="link link--black d-block pb-3" href="#">О компании</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Наши магазины</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Вакансии</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Контакты</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Новости</a>
+              </li>
+              <li>
+                <a class="link link--black d-block pb-3" href="#">Акции</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <p class="fs-20 fw-600 mb-4">Контакты</p>
+            <a class="link link--black d-block pb-4 fs-18" href="tel:+78000000000">8 800-000-00-00</a>
+            <a class="link link--black d-block pb-4 fs-18" href="mailto:sales@everest.ru">
+              <span class="d-block">sales@everest.ru</span>
+              <span class="d-block fs-14 color-grey pl-5">с 8:00 до 22:00</span>
+            </a>
+            <a class="link link--black d-block pb-4 pb-md-5 fw-600" href="#">Оставьте отзыв на flamp.ru</a>
+            <a class="link" href="http://sportlandia.ru/" target="_blank">
+              <img src="/img/logo-sportlandia.png" alt="" />
+              <span class="fs-14 color-grey">Официальный партнер</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container pt-3 pb-4">
+        <small class="mb-2 mb-md-0">&copy; Эверест груп 2021</small>
+        <a class="link link--grey link--underlined mb-2 mb-md-0" href="#">
+          <span class="fs-14 fw-300">Политика обработки персональных данных</span>
+        </a>
+        <a class="link link--black fs-15" href="https://www.e1media.ru/" target="_blank">Разработка сайта — Е1медиа</a>
+      </div>
+    </div>
+  </footer>
+  <div class="shade">Ваши данные отправлены</div>
+  <a class="btn-up" href="#" aria-label="Наверх" id="upbutton">
+    <svg width="18" height="22">
+      <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+    </svg>
+  </a>
+  <div class="menu">
+    <div class="container d-flex flex-column">
+      <a class="btn btn--blue mr-auto mb-4" href="#">В каталог</a>
+      <div class="nav mb-3">
+        <ul class="list d-flex flex-column">
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Обувь</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Одежда</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Охота</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Рыбалка</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Спорт</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Кемпинг</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Зоотовары</a>
+          </li>
+          <li>
+            <a class="link link--black d-block pb-3 fs-20" href="#">Фейрверки</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg-light-blue mb-4">
+      <div class="container pt-4 pb-4">
+        <ul class="list d-flex flex-column">
+          <li>
+            <div class="d-flex align-items-start pb-3">
+              <img class="mr-1" src="/img/icons/pin.svg" alt="" />
+              <span class="fs-18 fw-300">Камень на оби</span>
+            </div>
+          </li>
+          <li>
+            <a class="link d-block fs-18 fw-300 link--black pb-3" href="#">Адреса магазинов</a>
+          </li>
+          <li>
+            <a class="link d-block fs-18 fw-300 link--black pb-3" href="#">Оплата и доставка</a>
+          </li>
+          <li>
+            <a class="link d-block fs-18 fw-300 link--black pb-3" href="#">О нас</a>
+          </li>
+          <li>
+            <a class="link d-block fs-18 fw-300 link--black pb-3" href="#">Новости</a>
+          </li>
+          <li>
+            <a class="link d-block fs-18 fw-300 link--black pb-3" href="#">Контакты</a>
+          </li>
+          <li>
+            <a class="link d-block fs-18 fw-300 link--black" href="#">Вакансии</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <a class="tel link d-block link--black fw-600 mb-4" href="tel:+78004324354">8 800 432-43-54</a>
+      <div class="menu__form d-block mr-4">
+        <form action="/" method="GET">
+          <label class="fieldset">
+            <input type="text" name="search" placeholder="Поиск по сайту" autoComplete="off" />
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="desk-menu js-desk-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p class="desk-menu__title">Обувь</p>
+          <ul class="list list--dot">
+            <li>
+              <a class="link link--black d-block" href="#">Обувь</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Одежда</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Охота</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Рыбалка</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Спорт</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Кемпинг</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Зоотовары</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Фейрверки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p class="desk-menu__title">Одежда</p>
+          <ul class="list list--dot">
+            <li>
+              <a class="link link--black d-block" href="#">Обувь</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Одежда</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Охота</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Рыбалка</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Спорт</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Кемпинг</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Зоотовары</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Фейрверки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p class="desk-menu__title">Фейрверки</p>
+          <ul class="list list--dot">
+            <li>
+              <a class="link link--black d-block" href="#">Обувь</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Одежда</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Охота</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Рыбалка</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Спорт</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p class="desk-menu__title">Охота</p>
+          <ul class="list list--dot">
+            <li>
+              <a class="link link--black d-block" href="#">Обувь</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Одежда</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Охота</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Рыбалка</a>
+            </li>
+            <li>
+              <a class="link link--black d-block" href="#">Спорт</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/vendor.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

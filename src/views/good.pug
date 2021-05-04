@@ -1,0 +1,56 @@
+extends layouts/layout
+include components/header
+include components/footer
+include components/desk-menu
+include components/menu
+
+block title
+  | Cтраница товара
+
+block header
+  +header()
+
+block main
+  main
+    .pt-5.pb-5
+      .container
+        ul.list.breadcrumbs.d-none.d-md-flex.mb-4
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="/")
+                span.breadcrumbs__span Главная
+                span.breadcrumbs__arrow /
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#")
+                span.breadcrumbs__span Каталог
+                span.breadcrumbs__arrow /
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#")
+                span.breadcrumbs__span Обувь
+                span.breadcrumbs__arrow /
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#")
+                span.breadcrumbs__span Женская обувь
+                span.breadcrumbs__arrow /
+            li.breadcrumbs__item
+              a.breadcrumbs__link.breadcrumbs__link--current Ботинки утепленные Merrell Storm Trekker 6
+
+        h3.mb-2.wow.fadeInLeftSmall(data-wow-delay="200ms") Ботинки утепленные Merrell Storm Trekker 6
+
+    .mb-90
+      .container
+
+
+
+
+block footer
+  +footer()
+
+  .shade Ваши данные отправлены
+
+  a.btn-up(href="#" aria-label="Наверх" id="upbutton")
+    svg(width="18" height="22")
+      use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+
+block modal
+  +menu()
+  +desk-menu()
