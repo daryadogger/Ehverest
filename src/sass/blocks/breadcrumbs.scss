@@ -1,0 +1,52 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__item {
+  &:last-child a {
+    padding-right: 0;
+  }
+}
+
+.breadcrumbs__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: $black;
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 3px;
+
+
+  .breadcrumbs__span {
+    display: block;
+    margin-right: 7px;
+  }
+
+  &:active {
+    opacity: 0.5;
+    color: $black;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      opacity: 0.8;
+      color: $black;
+    }
+  }
+
+  &--current {
+    cursor: default;
+  }
+}
+
+.breadcrumbs__arrow {
+  width: 9px;
+  display: inline-block;
+  margin-top: 1px;
+}
+
+a.breadcrumbs__link:not([href]):not([tabindex]) {
+  color: $grey;
+}

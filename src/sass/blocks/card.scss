@@ -259,6 +259,10 @@
     height: 295px;
   }
 
+  &.card--sm {
+    height: 275px;
+  }
+
   .card__main {
     height: 100%;
     display: flex;
@@ -315,6 +319,10 @@
     &.card--lg {
       height: 205px;
     }
+
+    &.card--sm {
+      height: 265px;
+    }
   }
 
   @media (max-width: $media-td) {
@@ -322,6 +330,10 @@
 
     &.card--lg {
       height: 175px;
+    }
+
+    &.card--sm {
+      height: 245px;
     }
   }
 
@@ -331,12 +343,26 @@
     &.card--lg {
       height: 185px;
     }
+
+    &.card--sm {
+      height: 180px;
+    }
   }
 
   @media (max-width: $media-sm) {
     height: 165px;
 
     &.card--lg {
+      height: 165px;
+    }
+
+    &.card--sm {
+      height: 180px;
+    }
+  }
+
+  @media (max-width: 374px) {
+    &.card--sm {
       height: 165px;
     }
   }

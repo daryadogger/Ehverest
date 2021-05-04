@@ -1,0 +1,109 @@
+extends layouts/layout
+include components/header
+include components/footer
+include components/desk-menu
+include components/menu
+
+block title
+  | Cтраница каталога
+
+block header
+  +header()
+
+block main
+  main
+    .pt-5.pb-5
+      .container
+        ul.list.breadcrumbs.d-none.d-md-flex.mb-4
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="main.html")
+                span.breadcrumbs__span Главная
+                span.breadcrumbs__arrow /
+            li.breadcrumbs__item
+              a.breadcrumbs__link.breadcrumbs__link--current Каталог
+
+        h2.mb-2.wow.fadeInLeftSmall(data-wow-delay="200ms") Каталог товаров
+
+    .mb-90
+      .container
+        .row
+          .col-sm-6.col-md-4.col-lg-3.mb-4
+            a.card.card--category.card--sm.d-block(href="#")
+              .card__side
+                .bg.h-100(style="background-image: url(/img/category-1.jpg);")
+
+              .card__main
+                p.fw-600.h4 Обувь
+
+          .col-sm-6.col-md-4.col-lg-3.mb-4
+            a.card.card--category.card--sm.d-block(href="#")
+              .card__side
+                .bg.h-100(style="background-image: url(/img/category-4.jpg);")
+
+              .card__main
+                p.fw-600.h4 Одежда
+
+          .col-sm-6.col-md-4.col-lg-3.mb-4
+            a.card.card--category.card--sm.d-block(href="#")
+              .card__side
+                .bg.h-100(style="background-image: url(/img/category-5.jpg);")
+
+              .card__main
+                p.fw-600.h4 Охота
+
+          .col-sm-6.col-md-4.col-lg-3.mb-4
+            a.card.card--category.card--sm.d-block(href="#")
+              .card__side
+                .bg.h-100(style="background-image: url(/img/category-2.jpg);")
+
+              .card__main
+                p.fw-600.h4 Рыбалка
+
+          .col-sm-6.col-md-4.col-lg-3.mb-4
+            a.card.card--category.card--sm.d-block(href="#")
+              .card__side
+                .bg.h-100(style="background-image: url(/img/category-3.jpg);")
+
+              .card__main
+                p.fw-600.h4 Спорт
+
+          .col-sm-6.col-md-4.col-lg-3.mb-4
+            a.card.card--category.card--sm.d-block(href="#")
+              .card__side
+                .bg.h-100(style="background-image: url(/img/category-6.jpg);")
+
+              .card__main
+                p.fw-600.h4 Кемпинг
+
+
+          .col-sm-6.col-md-4.col-lg-3.mb-4
+            a.card.card--category.card--sm.d-block(href="#")
+              .card__side
+                .bg.h-100(style="background-image: url(/img/category-7.jpg);")
+
+              .card__main
+                p.fw-600.h4 Зоотовары
+
+
+          .col-sm-6.col-md-4.col-lg-3.mb-4
+            a.card.card--category.card--sm.d-block(href="#")
+              .card__side
+                .bg.h-100(style="background-image: url(/img/category-8.jpg);")
+
+              .card__main
+                p.fw-600.h4 Фейерверки
+
+
+
+block footer
+  +footer()
+
+  .shade Ваши данные отправлены
+
+  a.btn-up(href="#" aria-label="Наверх" id="upbutton")
+    svg(width="18" height="22")
+      use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+
+block modal
+  +menu()
+  +desk-menu()

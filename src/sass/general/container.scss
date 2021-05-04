@@ -29,6 +29,14 @@
 
 .mb-90 {
   margin-bottom: 90px;
+
+  @media (max-width: $media-td) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $media-tb) {
+    margin-bottom: 60px;
+  }
 }
 
 .h-500 {
