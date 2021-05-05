@@ -124,7 +124,7 @@
   border-radius: 15px;
 
   @media (max-width: $media-td) {
-    height: 235px;
+    height: 260px;
   }
 
   @media (max-width: $media-tb) {
@@ -133,5 +133,73 @@
 
   @media (max-width: $media-sm) {
     height: 185px;
+  }
+}
+
+.good-block .favorites {
+  margin-left: auto;
+  margin-bottom: 0;
+
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  svg {
+    fill: none;
+    transition: all 0.3s;
+
+    &:nth-of-type(2) {
+      display: none;
+    }
+  }
+
+  span {
+    display: inline-block;
+    height: 23px;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      svg {
+        stroke: rgba(67, 66, 66, 0.15);
+      }
+
+      span + span {
+        color: $blue;
+      }
+    }
+  }
+
+  input {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+  input:checked + span {
+    svg {
+      &:first-of-type {
+        display: none;
+      }
+
+      &:nth-of-type(2) {
+        display: block;
+      }
+    }
+  }
+
+  span {
+    transition: all 0.3s;
+    user-select: none;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  @media (max-width: $media-sm) {
+    margin-left: 0;
   }
 }

@@ -171,7 +171,7 @@
     <div class="mb-90">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-6">
+          <div class="col-md-6 mb-4 mb-md-0">
             <div class="box-shadow border-radius p-relative">
               <div class="marker marker--pink">
                 <span>Новинка</span>
@@ -181,24 +181,27 @@
               </a>
             </div>
           </div>
-          <div class="col-md-6 p-relative">
-            <div class="favorite">
-              <label>
-                <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
-                <span>
-                  <svg width="25" height="22">
-                    <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
-                  </svg>
-                  <svg width="25" height="22">
-                    <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
-                  </svg>
-                </span>
-              </label>
+          <div class="col-md-6 p-relative good-block">
+            <div class="d-flex flex-column flex-sm-row align-items-sm-center mb-4">
+              <p class="h3 mb-3 mb-sm-0">
+                <span>7 999</span>
+                <span>₽</span>
+              </p>
+              <div class="favorites">
+                <label>
+                  <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                  <span class="mr-2">
+                    <svg width="20" height="18">
+                      <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                    </svg>
+                    <svg width="20" height="18">
+                      <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                    </svg>
+                  </span>
+                  <span class="fs-14">В избранное</span>
+                </label>
+              </div>
             </div>
-            <p class="h3 mb-4">
-              <span>7 999</span>
-              <span>₽</span>
-            </p>
             <div class="d-flex align-items-center mb-4 size-select">
               <p class="mb-0 mr-3">Выберите размер:</p>
               <select>
@@ -210,21 +213,21 @@
             </div>
             <p class="mb-4">Высококачественные утепленные ботинки для зимнего туризма. Подошва Merrell обеспечивает надежное сцепление во время ходьбы по заснеженным поверхностям.</p>
             <div class="d-flex mb-4">
-              <a class="fs-14 link link--blue link--underlined d-flex mr-4" href="#">
-                <svg width="20" height="20">
+              <a class="fs-14 link link--blue link--underlined d-flex mr-5" href="#">
+                <svg class="mr-2" width="22" height="21">
                   <use xlink:href="img/sprite/sprite.svg#icon-delivery"></use>
                 </svg>
                 <span>Доставка</span>
               </a>
               <a class="fs-14 link link--blue link--underlined d-flex" href="#">
-                <svg width="20" height="20">
+                <svg class="mr-2" width="20" height="20">
                   <use xlink:href="img/sprite/sprite.svg#icon-card"></use>
                 </svg>
                 <span>Оплата</span>
               </a>
             </div>
-            <div class="d-flex">
-              <div class="d-flex quantity js-quantity align-items-center mr-5">
+            <div class="d-flex flex-column flex-sm-row align-items-sm-center">
+              <div class="d-flex quantity js-quantity align-items-center mb-4 mb-sm-0 mr-sm-5 pr-sm-4">
                 <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
                   <svg width="12" height="12">
                     <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
