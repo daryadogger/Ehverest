@@ -181,8 +181,64 @@
               </a>
             </div>
           </div>
-          <div class="col-md-6">
-            <p>Высококачественные утепленные ботинки для зимнего туризма. Подошва Merrell обеспечивает надежное сцепление во время ходьбы по заснеженным поверхностям.</p>
+          <div class="col-md-6 p-relative">
+            <div class="favorite">
+              <label>
+                <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                <span>
+                  <svg width="25" height="22">
+                    <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                  </svg>
+                  <svg width="25" height="22">
+                    <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <p class="h3 mb-4">
+              <span>7 999</span>
+              <span>₽</span>
+            </p>
+            <div class="d-flex align-items-center mb-4 size-select">
+              <p class="mb-0 mr-3">Выберите размер:</p>
+              <select>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+            </div>
+            <p class="mb-4">Высококачественные утепленные ботинки для зимнего туризма. Подошва Merrell обеспечивает надежное сцепление во время ходьбы по заснеженным поверхностям.</p>
+            <div class="d-flex mb-4">
+              <a class="fs-14 link link--blue link--underlined d-flex mr-4" href="#">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite/sprite.svg#icon-delivery"></use>
+                </svg>
+                <span>Доставка</span>
+              </a>
+              <a class="fs-14 link link--blue link--underlined d-flex" href="#">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite/sprite.svg#icon-card"></use>
+                </svg>
+                <span>Оплата</span>
+              </a>
+            </div>
+            <div class="d-flex">
+              <div class="d-flex quantity js-quantity align-items-center mr-5">
+                <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                  </svg>
+                </button>
+                <input class="js-number" type="text" value="1" name="quantity-input" id="quantity-input">
+                <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                  </svg>
+                </button>
+              </div>
+              <a class="btn btn--blue" href="#">Купить</a>
+            </div>
           </div>
         </div>
         <div class="box-shadow border-radius pr-3 pl-3 pl-md-4 pr-md-4 pr-lg-5 pl-lg-5 pt-4 pb-3">

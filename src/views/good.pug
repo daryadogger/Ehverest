@@ -48,8 +48,53 @@ block main
               a.link.d-block.gallery.p-4(data-fancybox="gallery" href="img/good-image.jpg")
                 .gallery__img.bg.bg--contain(style="background-image: url(img/good-image.jpg);")
 
-          .col-md-6
-            p Высококачественные утепленные ботинки для зимнего туризма. Подошва Merrell обеспечивает надежное сцепление во время ходьбы по заснеженным поверхностям.
+          .col-md-6.p-relative
+            .favorite
+              label
+                input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                span
+                  svg(width="25" height="22")
+                    use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                  svg(width="25" height="22")
+                    use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+
+            p.h3.mb-4
+              span 7 999
+              span ₽
+
+            .d-flex.align-items-center.mb-4.size-select
+              p.mb-0.mr-3 Выберите размер:
+              select
+                option(value="37") 37
+                option(value="38") 38
+                option(value="39") 39
+                option(value="40") 40
+
+            p.mb-4 Высококачественные утепленные ботинки для зимнего туризма. Подошва Merrell обеспечивает надежное сцепление во время ходьбы по заснеженным поверхностям.
+
+            .d-flex.mb-4
+              a.fs-14.link.link--blue.link--underlined.d-flex.mr-4(href="#")
+                svg(width="20" height="20")
+                  use(xlink:href='img/sprite/sprite.svg#icon-delivery')
+                span Доставка
+              a.fs-14.link.link--blue.link--underlined.d-flex(href="#")
+                svg(width="20" height="20")
+                  use(xlink:href='img/sprite/sprite.svg#icon-card')
+                span Оплата
+
+            .d-flex
+              .d-flex.quantity.js-quantity.align-items-center.mr-5
+                button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                  svg(width="12" height="12")
+                    use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                input.js-number(type="text" value="1" name="quantity-input" id="quantity-input")
+
+                button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                  svg(width="12" height="12")
+                    use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+              a.btn.btn--blue(href="#") Купить
 
         .box-shadow.border-radius.pr-3.pl-3.pl-md-4.pr-md-4.pr-lg-5.pl-lg-5.pt-4.pb-3
           .mb-4
