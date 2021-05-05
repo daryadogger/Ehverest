@@ -34,7 +34,7 @@ block main
 
     .mb-90
       .container
-        .d-flex.align-items-center.mb-4
+        .d-flex.align-items-sm-center.flex-column.flex-sm-row.mb-3
           .d-flex.align-items-center
             p.pr-2.mb-0.color-grey Сортировка:
 
@@ -43,7 +43,7 @@ block main
               option(value="По убыванию цены") По убыванию цены
               option(value="По популярности") По популярности
 
-          p.mb-0.ml-auto.mr-5.color-grey
+          p.mb-0.ml-sm-auto.mr-lg-5.color-grey
             span Всего товаров:
             span 336
 
@@ -68,7 +68,7 @@ block main
               form(method="POST" action="/")
                 .mb-4.d-flex.flex-column
                   p.fs-20 Цена
-                  .d-flex.justify-content-between.align-items-center.inputs-container.mb-3
+                  .d-flex.justify-content-between.align-items-center.inputs-container.mb-2.pb-1
                     label.mb-0
                       input.js-number.input-number(type="text" value="600" name="min-price")
                       span от
@@ -109,7 +109,7 @@ block main
                       span Kappa
                       span (1)
 
-                  a.link.link--blue.link--underlined.fs-14.d-block(href="#")
+                  a.link.link--blue.link--underlined.fs-14.d-block.pb-2(href="#")
                     span Показать все
 
                 .mb-4.d-flex.flex-column
@@ -136,7 +136,7 @@ block main
                       span Межсезонье
                       span (9)
 
-                  a.link.link--blue.link--underlined.fs-14.d-block(href="#")
+                  a.link.link--blue.link--underlined.fs-14.d-block.pb-2(href="#")
                     span Показать все
 
                 .mb-4.d-flex.flex-column
@@ -170,7 +170,7 @@ block main
                       span 39
                       span (1)
 
-                  a.link.link--blue.link--underlined.fs-14.d-block(href="#")
+                  a.link.link--blue.link--underlined.fs-14.d-block.pb-4(href="#")
                     span Показать все
 
                 .d-flex.flex-column
@@ -181,6 +181,45 @@ block main
             .catalog-content.js-catalog-content.catalog-content--row
               .row.mb-5
                 .col-sm-6.col-md-4.mb-4.d-flex.catalog-content__item
+                  .card.card--good
+                    .marker.marker--pink
+                      span Новинка
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="25" height="22")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="25" height="22")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+
+                    a.link.d-block.card__main.p-3(href="#")
+                      .card__img.mb-2
+                        img(src="/img/good-1.png", alt="")
+                      p.fs-14.fw-300.mb-2 Артикул:
+                        span.ml-1 2ZE8VE49J5
+                      p.fw-300.fs-18.color-black.card__title Тюбинг Nordway, 89 см*
+
+                      .card__price
+                        .price
+                          span 5 999
+                          span ₽
+
+                    .card__side.p-3
+                      .d-flex.quantity.js-quantity.align-items-center
+                        button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                          svg(width="12" height="12")
+                            use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                        input.js-number(type="text" value="1" name="quantity-input-1" id="quantity-input-1")
+
+                        button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                          svg(width="12" height="12")
+                            use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                      a.link.basket(href="#")
+                        svg(width='23' height='23')
+                          use(xlink:href="img/sprite/sprite.svg#icon-basket")
 
 
     .mb-90

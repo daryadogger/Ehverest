@@ -123,9 +123,11 @@
 
   label {
     position: relative;
+    width: 48%;
 
     input {
       padding-left: 30px;
+      width: 100%;
     }
 
     span {
@@ -142,7 +144,6 @@
   border: 0.5px solid rgba($black, 0.3);
   border-radius: 9px;
   padding: 8px 10px;
-  width: 95%;
   color: $grey;
   outline: none;
 
@@ -153,7 +154,7 @@
 }
 
 .irs--round {
-  height: 25px;
+  height: 15px;
 }
 
 .irs--round .irs-handle {

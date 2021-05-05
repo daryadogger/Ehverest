@@ -163,7 +163,7 @@
     </div>
     <div class="mb-90">
       <div class="container">
-        <div class="d-flex align-items-center mb-4">
+        <div class="d-flex align-items-sm-center flex-column flex-sm-row mb-3">
           <div class="d-flex align-items-center">
             <p class="pr-2 mb-0 color-grey">Сортировка:</p>
             <select>
@@ -172,7 +172,7 @@
               <option value="По популярности">По популярности</option>
             </select>
           </div>
-          <p class="mb-0 ml-auto mr-5 color-grey">
+          <p class="mb-0 ml-sm-auto mr-lg-5 color-grey">
             <span>Всего товаров:</span>
             <span>336</span>
           </p>
@@ -200,7 +200,7 @@
               <form method="POST" action="/">
                 <div class="mb-4 d-flex flex-column">
                   <p class="fs-20">Цена</p>
-                  <div class="d-flex justify-content-between align-items-center inputs-container mb-3">
+                  <div class="d-flex justify-content-between align-items-center inputs-container mb-2 pb-1">
                     <label class="mb-0">
                       <input class="js-number input-number" type="text" value="600" name="min-price">
                       <span>от</span>
@@ -248,7 +248,7 @@
                       <span>(1)</span>
                     </span>
                   </label>
-                  <a class="link link--blue link--underlined fs-14 d-block" href="#">
+                  <a class="link link--blue link--underlined fs-14 d-block pb-2" href="#">
                     <span>Показать все</span>
                   </a>
                 </div>
@@ -278,7 +278,7 @@
                       <span>(9)</span>
                     </span>
                   </label>
-                  <a class="link link--blue link--underlined fs-14 d-block" href="#">
+                  <a class="link link--blue link--underlined fs-14 d-block pb-2" href="#">
                     <span>Показать все</span>
                   </a>
                 </div>
@@ -316,7 +316,7 @@
                       <span>(1)</span>
                     </span>
                   </label>
-                  <a class="link link--blue link--underlined fs-14 d-block" href="#">
+                  <a class="link link--blue link--underlined fs-14 d-block pb-4" href="#">
                     <span>Показать все</span>
                   </a>
                 </div>
@@ -330,7 +330,60 @@
           <div class="col-lg-9">
             <div class="catalog-content js-catalog-content catalog-content--row">
               <div class="row mb-5">
-                <div class="col-sm-6 col-md-4 mb-4 d-flex catalog-content__item"></div>
+                <div class="col-sm-6 col-md-4 mb-4 d-flex catalog-content__item">
+                  <div class="card card--good">
+                    <div class="marker marker--pink">
+                      <span>Новинка</span>
+                    </div>
+                    <div class="card__favorite">
+                      <label>
+                        <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                        <span>
+                          <svg width="25" height="22">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          </svg>
+                          <svg width="25" height="22">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                    <a class="link d-block card__main p-3" href="#">
+                      <div class="card__img mb-2">
+                        <img src="/img/good-1.png" alt="">
+                      </div>
+                      <p class="fs-14 fw-300 mb-2">Артикул:<span class="ml-1">2ZE8VE49J5</span>
+                      </p>
+                      <p class="fw-300 fs-18 color-black card__title">Тюбинг Nordway, 89 см*</p>
+                      <div class="card__price">
+                        <div class="price">
+                          <span>5 999</span>
+                          <span>₽</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="card__side p-3">
+                      <div class="d-flex quantity js-quantity align-items-center">
+                        <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                          <svg width="12" height="12">
+                            <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                          </svg>
+                        </button>
+                        <input class="js-number" type="text" value="1" name="quantity-input-1" id="quantity-input-1">
+                        <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                          <svg width="12" height="12">
+                            <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <a class="link basket" href="#">
+                        <svg width="23" height="23">
+                          <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

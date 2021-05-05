@@ -1,0 +1,137 @@
+.card--good {
+  .link-basket {
+    display: none;
+  }
+
+  .card__row-controls {
+    display: none;
+  }
+
+  .card__main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .card__part {
+    display: block;
+  }
+
+  .mb-col {
+    margin-bottom: 1rem;
+  }
+}
+
+
+.catalog-content--row {
+  .card--good {
+    flex-direction: row;
+  }
+
+  .card__title {
+    height: auto;
+  }
+
+  .card__row-controls {
+    display: flex;
+    align-items: center;
+    width: 135px;
+  }
+
+  .card__part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  .mb-col {
+    margin-bottom: 0;
+  }
+
+  .card__controls {
+    display: none;
+  }
+
+  .btn-basket {
+    display: none;
+  }
+
+  .link-basket {
+    display: flex;
+  }
+
+  .quantity {
+    order: -1;
+  }
+
+  .card--good .card__prices--sale {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .card__favorite {
+    margin-bottom: 0;
+  }
+
+  .card__info {
+    svg {
+      vertical-align: middle;
+    }
+  }
+
+  .card--good .card__price--new {
+    margin-right: 15px;
+  }
+
+  .card__meds {
+    margin-bottom: 0;
+  }
+
+  .card__price-quantity {
+    min-width: 290px;
+  }
+
+  .card--good .card__img {
+    height: 120px;
+    width: 120px;
+
+    img {
+      max-height: 120px;
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  .card__side {
+    margin-right: 15px;
+  }
+}
+
+.catalog-content--row .catalog-content__item {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.gallery {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.gallery__img {
+  height: 335px;
+  border-radius: 15px;
+
+  @media (max-width: $media-td) {
+    height: 235px;
+  }
+
+  @media (max-width: $media-tb) {
+    height: 200px;
+  }
+
+  @media (max-width: $media-sm) {
+    height: 185px;
+  }
+}
