@@ -32,6 +32,156 @@ block main
 
         h2.mb-2.wow.fadeInLeftSmall(data-wow-delay="200ms") Женская обувь
 
+    .mb-90
+      .container
+        .d-flex.align-items-center.mb-4
+          .d-flex.align-items-center
+            p.pr-2.mb-0.color-grey Сортировка:
+
+            select
+              option(value="По возрастанию цены") По возрастанию цены
+              option(value="По убыванию цены") По убыванию цены
+              option(value="По популярности") По популярности
+
+          p.mb-0.ml-auto.mr-5.color-grey
+            span Всего товаров:
+            span 336
+
+          .d-none.d-lg-flex.align-items-center
+            p.mb-0.color-grey.pr-3 Вид:
+
+            .align-items-center.d-flex
+              a.link.link-view.js-link-view.mr-3.js-col(href="#")
+                svg(width="20" height="20")
+                  use(xlink:href="img/sprite/sprite.svg#icon-col")
+              a.link.link-view.js-link-view.js-row.active(href="#")
+                svg(width="23" height="24")
+                  use(xlink:href="img/sprite/sprite.svg#icon-row")
+
+        .row
+          .col-lg-3.mb-5.mb-lg-0
+            a.js-filter-btn.btn.btn--blue.d-lg-none(href="#") Фильтр
+
+            .filter.js-filter.p-4
+              button.btn.btn-close.js-close-filter.d-lg-none(type="button" title="Закрыть фильтр" aria-label="Закрыть фильтр")
+
+              form(method="POST" action="/")
+                .mb-4.d-flex.flex-column
+                  p.fs-20 Цена
+                  .d-flex.justify-content-between.align-items-center.inputs-container.mb-3
+                    label.mb-0
+                      input.js-number.input-number(type="text" value="600" name="min-price")
+                      span от
+                    label.mb-0.d-flex.justify-content-end
+                      input.js-number.input-number(type="text" value="3999" name="max-price")
+                      span до
+                  .d-block.mb-1
+                    input.js-range(type="text" name="range" value="")
+
+                .mb-4.d-flex.flex-column
+                  p.fs-20 Бренд
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="Termit " name="Brand")
+                    span.checkbox__span
+                    span.checkbox__text
+                      span Termit
+                      span (2)
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="Outventure" name="Brand")
+                    span.checkbox__span
+                    span.checkbox__text
+                      span Outventure
+                      span (4)
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="Demix" name="Brand")
+                    span.checkbox__span
+                    span.checkbox__text
+                      span Demix
+                      span (9)
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="Kappa" name="Brand")
+                    span.checkbox__span
+                    span.checkbox__text
+                      span Kappa
+                      span (1)
+
+                  a.link.link--blue.link--underlined.fs-14.d-block(href="#")
+                    span Показать все
+
+                .mb-4.d-flex.flex-column
+                  p.fs-20 Сезон
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="Зима" name="Season")
+                    span.checkbox__span
+                    span.checkbox__text
+                      span Зима
+                      span (140)
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="Лето" name="Season")
+                    span.checkbox__span
+                    span.checkbox__text
+                      span Лето
+                      span (40)
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="Межсезонье" name="Season")
+                    span.checkbox__span
+                    span.checkbox__text
+                      span Межсезонье
+                      span (9)
+
+                  a.link.link--blue.link--underlined.fs-14.d-block(href="#")
+                    span Показать все
+
+                .mb-4.d-flex.flex-column
+                  p.fs-20 Размер
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="36" name="Size")
+                    span.checkbox__span
+                    span.checkbox__text
+                      span 36
+                      span (2)
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="37" name="Size")
+                    span.checkbox__span
+                    span.checkbox__text
+                      span 37
+                      span (4)
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="38" name="Size")
+                    span.checkbox__span
+                    span.checkbox__text
+                      span 38
+                      span (9)
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="39" name="Size")
+                    span.checkbox__span
+                    span.checkbox__text
+                      span 39
+                      span (1)
+
+                  a.link.link--blue.link--underlined.fs-14.d-block(href="#")
+                    span Показать все
+
+                .d-flex.flex-column
+                  button.btn.btn--blue.mb-3(type="submit") Применить
+                  button.btn.btn--border(type="reset") Сбросить
+
+          .col-lg-9
+            .catalog-content.js-catalog-content.catalog-content--row
+              .row.mb-5
+                .col-sm-6.col-md-4.mb-4.d-flex.catalog-content__item
+
 
     .mb-90
       .container
@@ -312,6 +462,8 @@ block footer
   a.btn-up(href="#" aria-label="Наверх" id="upbutton")
     svg(width="18" height="22")
       use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+
+  .overlay
 
 block modal
   +menu()

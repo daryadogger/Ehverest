@@ -55,3 +55,23 @@
   width: 107px;
   flex-shrink: 0;
 }
+
+select {
+  background-color: $white;
+  background-image: url('../img/icons/select-arrow.svg');
+  background-position: calc(100% - 10px) calc(0% + 18px);
+  background-repeat: no-repeat;
+  padding: 10px 30px 10px 10px;
+  border: none;
+  color: $blue;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  outline: none;
+  width: 215px;
+}
+
+select::-ms-expand {
+  display: none;
+}

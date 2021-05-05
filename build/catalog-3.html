@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
@@ -158,6 +159,182 @@
           </li>
         </ul>
         <h2 class="mb-2 wow fadeInLeftSmall" data-wow-delay="200ms">Женская обувь</h2>
+      </div>
+    </div>
+    <div class="mb-90">
+      <div class="container">
+        <div class="d-flex align-items-center mb-4">
+          <div class="d-flex align-items-center">
+            <p class="pr-2 mb-0 color-grey">Сортировка:</p>
+            <select>
+              <option value="По возрастанию цены">По возрастанию цены</option>
+              <option value="По убыванию цены">По убыванию цены</option>
+              <option value="По популярности">По популярности</option>
+            </select>
+          </div>
+          <p class="mb-0 ml-auto mr-5 color-grey">
+            <span>Всего товаров:</span>
+            <span>336</span>
+          </p>
+          <div class="d-none d-lg-flex align-items-center">
+            <p class="mb-0 color-grey pr-3">Вид:</p>
+            <div class="align-items-center d-flex">
+              <a class="link link-view js-link-view mr-3 js-col" href="#">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite/sprite.svg#icon-col"></use>
+                </svg>
+              </a>
+              <a class="link link-view js-link-view js-row active" href="#">
+                <svg width="23" height="24">
+                  <use xlink:href="img/sprite/sprite.svg#icon-row"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 mb-5 mb-lg-0">
+            <a class="js-filter-btn btn btn--blue d-lg-none" href="#">Фильтр</a>
+            <div class="filter js-filter p-4">
+              <button class="btn btn-close js-close-filter d-lg-none" type="button" title="Закрыть фильтр" aria-label="Закрыть фильтр"></button>
+              <form method="POST" action="/">
+                <div class="mb-4 d-flex flex-column">
+                  <p class="fs-20">Цена</p>
+                  <div class="d-flex justify-content-between align-items-center inputs-container mb-3">
+                    <label class="mb-0">
+                      <input class="js-number input-number" type="text" value="600" name="min-price">
+                      <span>от</span>
+                    </label>
+                    <label class="mb-0 d-flex justify-content-end">
+                      <input class="js-number input-number" type="text" value="3999" name="max-price">
+                      <span>до</span>
+                    </label>
+                  </div>
+                  <div class="d-block mb-1">
+                    <input class="js-range" type="text" name="range" value="">
+                  </div>
+                </div>
+                <div class="mb-4 d-flex flex-column">
+                  <p class="fs-20">Бренд</p>
+                  <label class="visually-hidden-input checkbox">
+                    <input type="checkbox" value="Termit " name="Brand">
+                    <span class="checkbox__span"></span>
+                    <span class="checkbox__text">
+                      <span>Termit</span>
+                      <span>(2)</span>
+                    </span>
+                  </label>
+                  <label class="visually-hidden-input checkbox">
+                    <input type="checkbox" value="Outventure" name="Brand">
+                    <span class="checkbox__span"></span>
+                    <span class="checkbox__text">
+                      <span>Outventure</span>
+                      <span>(4)</span>
+                    </span>
+                  </label>
+                  <label class="visually-hidden-input checkbox">
+                    <input type="checkbox" value="Demix" name="Brand">
+                    <span class="checkbox__span"></span>
+                    <span class="checkbox__text">
+                      <span>Demix</span>
+                      <span>(9)</span>
+                    </span>
+                  </label>
+                  <label class="visually-hidden-input checkbox">
+                    <input type="checkbox" value="Kappa" name="Brand">
+                    <span class="checkbox__span"></span>
+                    <span class="checkbox__text">
+                      <span>Kappa</span>
+                      <span>(1)</span>
+                    </span>
+                  </label>
+                  <a class="link link--blue link--underlined fs-14 d-block" href="#">
+                    <span>Показать все</span>
+                  </a>
+                </div>
+                <div class="mb-4 d-flex flex-column">
+                  <p class="fs-20">Сезон</p>
+                  <label class="visually-hidden-input checkbox">
+                    <input type="checkbox" value="Зима" name="Season">
+                    <span class="checkbox__span"></span>
+                    <span class="checkbox__text">
+                      <span>Зима</span>
+                      <span>(140)</span>
+                    </span>
+                  </label>
+                  <label class="visually-hidden-input checkbox">
+                    <input type="checkbox" value="Лето" name="Season">
+                    <span class="checkbox__span"></span>
+                    <span class="checkbox__text">
+                      <span>Лето</span>
+                      <span>(40)</span>
+                    </span>
+                  </label>
+                  <label class="visually-hidden-input checkbox">
+                    <input type="checkbox" value="Межсезонье" name="Season">
+                    <span class="checkbox__span"></span>
+                    <span class="checkbox__text">
+                      <span>Межсезонье</span>
+                      <span>(9)</span>
+                    </span>
+                  </label>
+                  <a class="link link--blue link--underlined fs-14 d-block" href="#">
+                    <span>Показать все</span>
+                  </a>
+                </div>
+                <div class="mb-4 d-flex flex-column">
+                  <p class="fs-20">Размер</p>
+                  <label class="visually-hidden-input checkbox">
+                    <input type="checkbox" value="36" name="Size">
+                    <span class="checkbox__span"></span>
+                    <span class="checkbox__text">
+                      <span>36</span>
+                      <span>(2)</span>
+                    </span>
+                  </label>
+                  <label class="visually-hidden-input checkbox">
+                    <input type="checkbox" value="37" name="Size">
+                    <span class="checkbox__span"></span>
+                    <span class="checkbox__text">
+                      <span>37</span>
+                      <span>(4)</span>
+                    </span>
+                  </label>
+                  <label class="visually-hidden-input checkbox">
+                    <input type="checkbox" value="38" name="Size">
+                    <span class="checkbox__span"></span>
+                    <span class="checkbox__text">
+                      <span>38</span>
+                      <span>(9)</span>
+                    </span>
+                  </label>
+                  <label class="visually-hidden-input checkbox">
+                    <input type="checkbox" value="39" name="Size">
+                    <span class="checkbox__span"></span>
+                    <span class="checkbox__text">
+                      <span>39</span>
+                      <span>(1)</span>
+                    </span>
+                  </label>
+                  <a class="link link--blue link--underlined fs-14 d-block" href="#">
+                    <span>Показать все</span>
+                  </a>
+                </div>
+                <div class="d-flex flex-column">
+                  <button class="btn btn--blue mb-3" type="submit">Применить</button>
+                  <button class="btn btn--border" type="reset">Сбросить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="catalog-content js-catalog-content catalog-content--row">
+              <div class="row mb-5">
+                <div class="col-sm-6 col-md-4 mb-4 d-flex catalog-content__item"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="mb-90">
@@ -645,6 +822,7 @@
       <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
     </svg>
   </a>
+  <div class="overlay"></div>
   <div class="menu">
     <div class="container d-flex flex-column">
       <a class="btn btn--blue mr-auto mb-4" href="#">В каталог</a>
@@ -824,6 +1002,7 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/vendor.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>

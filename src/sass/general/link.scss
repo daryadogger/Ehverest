@@ -49,3 +49,22 @@
     border-bottom: 1px dashed;
   }
 }
+
+.link-view {
+  color: rgba($black, 0.4);
+
+  &.active {
+    color: $blue;
+    cursor: default;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $blue-2;
+
+      &.active {
+        color: $blue;
+      }
+    }
+  }
+}

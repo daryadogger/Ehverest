@@ -42,7 +42,8 @@
 
  /* полоса прокрутки (скроллбар) */
 .menu::-webkit-scrollbar,
-.fancybox-stage ::-webkit-scrollbar {
+.fancybox-stage ::-webkit-scrollbar,
+.filter::-webkit-scrollbar {
   width: 9px; /* ширина для вертикального скролла */
   height: 8px; /* высота для горизонтального скролла */
   background-color: rgba($grey, 0.1);
@@ -51,7 +52,8 @@
 
 /* ползунок скроллбара */
 .menu::-webkit-scrollbar-thumb,
-.fancybox-stage ::-webkit-scrollbar-thumb {
+.fancybox-stage ::-webkit-scrollbar-thumb,
+.filter::-webkit-scrollbar-thumb {
   background-color: rgba(#98989b, 0.15);
   border-radius: 5px;
 }

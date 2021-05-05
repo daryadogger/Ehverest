@@ -9,6 +9,9 @@ import btnUp from './btn-up';
 import goodQuantity from './good-quantity';
 import footerForm from './footer-form';
 import deskMenu from './desk-menu';
+import filter from './filter-open';
+import range from './range';
+import sort from './sort';
 
 class App {
   static init() {
@@ -23,6 +26,9 @@ class App {
     goodQuantity();
     footerForm();
     deskMenu();
+    filter();
+    range();
+    sort();
   }
 }
 
