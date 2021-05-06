@@ -181,7 +181,7 @@ block main
             .catalog-content.js-catalog-content.catalog-content--row
               .row.mb-5
                 .col-sm-6.col-md-4.mb-4.d-flex.catalog-content__item
-                  .card.card--good
+                  .card.card--good.p-3
                     .marker.marker--pink
                       span Новинка
                     .card__favorite
@@ -193,25 +193,35 @@ block main
                           svg(width="25" height="22")
                             use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
 
-                    a.link.d-block.card__main.p-3(href="#")
-                      .card__img.mb-2
+                    a.link.d-block(href="#")
+                      .card__img.mb-col
                         img(src="/img/good-1.png", alt="")
+
+                    a.link.d-block.card__info(href="#")
                       p.fs-14.fw-300.mb-2 Артикул:
                         span.ml-1 2ZE8VE49J5
-                      p.fw-300.fs-18.color-black.card__title Тюбинг Nordway, 89 см*
+                      p.fw-300.color-black.card__title Тюбинг Nordway, 89 см*
+                      .card__favorite
+                        label
+                          input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                          span
+                            svg(width="20" height="18")
+                              use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                            svg(width="20" height="18")
+                              use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
 
-                      .card__price
-                        .price
-                          span 5 999
-                          span ₽
+                    .card__price
+                      .price
+                        span 5 999
+                        span ₽
 
-                    .card__side.p-3
+                    .card__side
                       .d-flex.quantity.js-quantity.align-items-center
                         button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
                           svg(width="12" height="12")
                             use(xlink:href="img/sprite/sprite.svg#icon-minus")
 
-                        input.js-number(type="text" value="1" name="quantity-input-1" id="quantity-input-1")
+                        input.js-number(type="text" value="1" name="quantity-input-10" id="quantity-input-10")
 
                         button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
                           svg(width="12" height="12")
@@ -221,6 +231,183 @@ block main
                         svg(width='23' height='23')
                           use(xlink:href="img/sprite/sprite.svg#icon-basket")
 
+                .col-sm-6.col-md-4.mb-4.d-flex.catalog-content__item
+                  .card.card--good.p-3
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="25" height="22")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="25" height="22")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+
+                    a.link.d-block(href="#")
+                      .card__img.mb-col
+                        img(src="/img/good-2.png", alt="")
+
+                    a.link.d-block.card__info(href="#")
+                      p.fs-14.fw-300.mb-2 Артикул:
+                        span.ml-1 2ZE8VE49J5
+                      p.fw-300.color-black.card__title Коньки раздвижные детские Nordway Click-girl
+                      .card__favorite
+                        label
+                          input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                          span
+                            svg(width="20" height="18")
+                              use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                            svg(width="20" height="18")
+                              use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+
+                    .card__prices-block
+                      .card__prices
+                        .card__price
+                          span 2 499
+                          span ₽
+                        .card__price.card__price--old
+                          .card__line
+                            span 6 999
+                            span ₽
+
+                      .card__sale
+                        span -20
+                        span %
+
+                    .card__side
+                      .d-flex.quantity.js-quantity.align-items-center
+                        button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                          svg(width="12" height="12")
+                            use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                        input.js-number(type="text" value="1" name="quantity-input-10" id="quantity-input-10")
+
+                        button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                          svg(width="12" height="12")
+                            use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                      a.link.basket(href="#")
+                        svg(width='23' height='23')
+                          use(xlink:href="img/sprite/sprite.svg#icon-basket")
+
+                .col-sm-6.col-md-4.mb-4.d-flex.catalog-content__item
+                  .card.card--good.p-3
+                    .marker.marker--peach
+                      span Лучшая цена
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="25" height="22")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="25" height="22")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+
+                    a.link.d-block(href="#")
+                      .card__img.mb-col
+                        img(src="/img/good-3.png", alt="")
+
+                    a.link.d-block.card__info(href="#")
+                      p.fs-14.fw-300.mb-2 Артикул:
+                        span.ml-1 2ZE8VE49J5
+                      p.fw-300.color-black.card__title Сноуборд Termit Fastlanel
+                      .card__favorite
+                        label
+                          input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                          span
+                            svg(width="20" height="18")
+                              use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                            svg(width="20" height="18")
+                              use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+
+                    .card__price
+                      .price
+                        span 50 999
+                        span ₽
+
+                    .card__side
+                      .d-flex.quantity.js-quantity.align-items-center
+                        button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                          svg(width="12" height="12")
+                            use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                        input.js-number(type="text" value="1" name="quantity-input-10" id="quantity-input-10")
+
+                        button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                          svg(width="12" height="12")
+                            use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                      a.link.basket(href="#")
+                        svg(width='23' height='23')
+                          use(xlink:href="img/sprite/sprite.svg#icon-basket")
+
+                .col-sm-6.col-md-4.mb-4.d-flex.catalog-content__item
+                  .card.card--good.p-3
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="25" height="22")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="25" height="22")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+
+                    a.link.d-block(href="#")
+                      .card__img.mb-col
+                        img(src="/img/good-4.png", alt="")
+
+                    a.link.d-block.card__info(href="#")
+                      p.fs-14.fw-300.mb-2 Артикул:
+                        span.ml-1 2ZE8VE49J5
+                      p.fw-300.color-black.card__title Коньки раздвижные детские Nordway детские Nordway Click- girl
+                      .card__favorite
+                        label
+                          input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                          span
+                            svg(width="20" height="18")
+                              use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                            svg(width="20" height="18")
+                              use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+
+                    .card__price
+                      .price
+                        span 50 999
+                        span ₽
+
+                    .card__side
+                      .d-flex.quantity.js-quantity.align-items-center
+                        button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                          svg(width="12" height="12")
+                            use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                        input.js-number(type="text" value="1" name="quantity-input-10" id="quantity-input-10")
+
+                        button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                          svg(width="12" height="12")
+                            use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                      a.link.basket(href="#")
+                        svg(width='23' height='23')
+                          use(xlink:href="img/sprite/sprite.svg#icon-basket")
+
+            ul.pagination.list.d-flex
+              li
+                a.link.pagination__arrow.pagination__arrow--prev(href="#")
+                  svg(width="13" height="20")
+                    use(xlink:href="img/sprite/sprite.svg#icon-pagination-arrow")
+              li.active
+                a.link(href="#") 1
+              li
+                a.link(href="#") 2
+              li
+                a.link(href="#") 3
+              li
+                a.link(href="#") 4
+              li
+                a.link(href="#") 5
+              li
+                a.link.pagination__arrow.pagination__arrow--next(href="#")
+                  svg(width="13" height="20")
+                    use(xlink:href="img/sprite/sprite.svg#icon-pagination-arrow")
 
     .mb-90
       .container

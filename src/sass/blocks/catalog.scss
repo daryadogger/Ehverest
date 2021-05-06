@@ -1,99 +1,92 @@
 .card--good {
-  .link-basket {
-    display: none;
-  }
-
-  .card__row-controls {
-    display: none;
-  }
-
-  .card__main {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-  }
-
-  .card__part {
-    display: block;
-  }
-
   .mb-col {
     margin-bottom: 1rem;
   }
+
+  .card__info .card__favorite {
+    display: none;
+  }
 }
 
+.catalog-content__item {
+  .card__price {
+    margin-bottom: 1rem;
+  }
+
+  .card__title {
+    font-size: 18px;
+  }
+
+  .card__price--old {
+    &::before {
+      display: none;
+    }
+  }
+  .card__line {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1.5px;
+      width: 100%;
+      left: 0;
+      top: 46%;
+      transform: rotate(-11deg);
+      background-color: #FB7988;
+    }
+  }
+}
 
 .catalog-content--row {
   .card--good {
     flex-direction: row;
+    align-items: center;
   }
 
   .card__title {
     height: auto;
+    font-size: 16px;
+    margin-bottom: 0.7rem;
   }
 
-  .card__row-controls {
-    display: flex;
-    align-items: center;
-    width: 135px;
+  .card__side {
+    margin-left: auto;
   }
 
-  .card__part {
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
+  .quantity {
+    margin-right: 40px;
+  }
+
+  .card__price {
+    margin-left: auto;
+    margin-bottom: 0;
+    min-width: 110px;
+    text-align: center;
+  }
+
+  .card__prices {
+    padding-right: 0;
+  }
+
+  .card__prices-block {
+    margin-left: auto;
+  }
+
+  .card__sale {
+    display: none;
   }
 
   .mb-col {
     margin-bottom: 0;
   }
 
-  .card__controls {
-    display: none;
-  }
-
-  .btn-basket {
-    display: none;
-  }
-
-  .link-basket {
-    display: flex;
-  }
-
-  .quantity {
-    order: -1;
-  }
-
-  .card--good .card__prices--sale {
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .card__favorite {
-    margin-bottom: 0;
-  }
-
-  .card__info {
-    svg {
-      vertical-align: middle;
-    }
-  }
-
-  .card--good .card__price--new {
-    margin-right: 15px;
-  }
-
-  .card__meds {
-    margin-bottom: 0;
-  }
-
-  .card__price-quantity {
-    min-width: 290px;
-  }
-
   .card--good .card__img {
-    height: 120px;
+    height: 115px;
     width: 120px;
+    margin-right: 20px;
 
     img {
       max-height: 120px;
@@ -102,8 +95,25 @@
     }
   }
 
-  .card__side {
-    margin-right: 15px;
+  .card__favorite {
+    display: none;
+  }
+
+  .card__info {
+    width: 260px;
+
+    @media (max-width: $media-md) {
+      width: 210px;
+    }
+
+    @media (max-width: 1099px) {
+      width: 180px;
+    }
+  }
+
+  .card__info .card__favorite {
+    display: block;
+    position: static;
   }
 }
 

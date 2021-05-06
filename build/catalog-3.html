@@ -331,7 +331,7 @@
             <div class="catalog-content js-catalog-content catalog-content--row">
               <div class="row mb-5">
                 <div class="col-sm-6 col-md-4 mb-4 d-flex catalog-content__item">
-                  <div class="card card--good">
+                  <div class="card card--good p-3">
                     <div class="marker marker--pink">
                       <span>Новинка</span>
                     </div>
@@ -348,28 +348,256 @@
                         </span>
                       </label>
                     </div>
-                    <a class="link d-block card__main p-3" href="#">
-                      <div class="card__img mb-2">
+                    <a class="link d-block" href="#">
+                      <div class="card__img mb-col">
                         <img src="/img/good-1.png" alt="">
                       </div>
+                    </a>
+                    <a class="link d-block card__info" href="#">
                       <p class="fs-14 fw-300 mb-2">Артикул:<span class="ml-1">2ZE8VE49J5</span>
                       </p>
-                      <p class="fw-300 fs-18 color-black card__title">Тюбинг Nordway, 89 см*</p>
-                      <div class="card__price">
-                        <div class="price">
-                          <span>5 999</span>
-                          <span>₽</span>
-                        </div>
+                      <p class="fw-300 color-black card__title">Тюбинг Nordway, 89 см*</p>
+                      <div class="card__favorite">
+                        <label>
+                          <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                          <span>
+                            <svg width="20" height="18">
+                              <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                            </svg>
+                            <svg width="20" height="18">
+                              <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                            </svg>
+                          </span>
+                        </label>
                       </div>
                     </a>
-                    <div class="card__side p-3">
+                    <div class="card__price">
+                      <div class="price">
+                        <span>5 999</span>
+                        <span>₽</span>
+                      </div>
+                    </div>
+                    <div class="card__side">
                       <div class="d-flex quantity js-quantity align-items-center">
                         <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
                           <svg width="12" height="12">
                             <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
                           </svg>
                         </button>
-                        <input class="js-number" type="text" value="1" name="quantity-input-1" id="quantity-input-1">
+                        <input class="js-number" type="text" value="1" name="quantity-input-10" id="quantity-input-10">
+                        <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                          <svg width="12" height="12">
+                            <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <a class="link basket" href="#">
+                        <svg width="23" height="23">
+                          <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4 d-flex catalog-content__item">
+                  <div class="card card--good p-3">
+                    <div class="card__favorite">
+                      <label>
+                        <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                        <span>
+                          <svg width="25" height="22">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          </svg>
+                          <svg width="25" height="22">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                    <a class="link d-block" href="#">
+                      <div class="card__img mb-col">
+                        <img src="/img/good-2.png" alt="">
+                      </div>
+                    </a>
+                    <a class="link d-block card__info" href="#">
+                      <p class="fs-14 fw-300 mb-2">Артикул:<span class="ml-1">2ZE8VE49J5</span>
+                      </p>
+                      <p class="fw-300 color-black card__title">Коньки раздвижные детские Nordway Click-girl</p>
+                      <div class="card__favorite">
+                        <label>
+                          <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                          <span>
+                            <svg width="20" height="18">
+                              <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                            </svg>
+                            <svg width="20" height="18">
+                              <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                    </a>
+                    <div class="card__prices-block">
+                      <div class="card__prices">
+                        <div class="card__price">
+                          <span>2 499</span>
+                          <span>₽</span>
+                        </div>
+                        <div class="card__price card__price--old">
+                          <div class="card__line">
+                            <span>6 999</span>
+                            <span>₽</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__sale">
+                        <span>-20</span>
+                        <span>%</span>
+                      </div>
+                    </div>
+                    <div class="card__side">
+                      <div class="d-flex quantity js-quantity align-items-center">
+                        <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                          <svg width="12" height="12">
+                            <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                          </svg>
+                        </button>
+                        <input class="js-number" type="text" value="1" name="quantity-input-10" id="quantity-input-10">
+                        <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                          <svg width="12" height="12">
+                            <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <a class="link basket" href="#">
+                        <svg width="23" height="23">
+                          <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4 d-flex catalog-content__item">
+                  <div class="card card--good p-3">
+                    <div class="marker marker--peach">
+                      <span>Лучшая цена</span>
+                    </div>
+                    <div class="card__favorite">
+                      <label>
+                        <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                        <span>
+                          <svg width="25" height="22">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          </svg>
+                          <svg width="25" height="22">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                    <a class="link d-block" href="#">
+                      <div class="card__img mb-col">
+                        <img src="/img/good-3.png" alt="">
+                      </div>
+                    </a>
+                    <a class="link d-block card__info" href="#">
+                      <p class="fs-14 fw-300 mb-2">Артикул:<span class="ml-1">2ZE8VE49J5</span>
+                      </p>
+                      <p class="fw-300 color-black card__title">Сноуборд Termit Fastlanel</p>
+                      <div class="card__favorite">
+                        <label>
+                          <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                          <span>
+                            <svg width="20" height="18">
+                              <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                            </svg>
+                            <svg width="20" height="18">
+                              <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                    </a>
+                    <div class="card__price">
+                      <div class="price">
+                        <span>50 999</span>
+                        <span>₽</span>
+                      </div>
+                    </div>
+                    <div class="card__side">
+                      <div class="d-flex quantity js-quantity align-items-center">
+                        <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                          <svg width="12" height="12">
+                            <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                          </svg>
+                        </button>
+                        <input class="js-number" type="text" value="1" name="quantity-input-10" id="quantity-input-10">
+                        <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                          <svg width="12" height="12">
+                            <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <a class="link basket" href="#">
+                        <svg width="23" height="23">
+                          <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4 d-flex catalog-content__item">
+                  <div class="card card--good p-3">
+                    <div class="card__favorite">
+                      <label>
+                        <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                        <span>
+                          <svg width="25" height="22">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          </svg>
+                          <svg width="25" height="22">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                    <a class="link d-block" href="#">
+                      <div class="card__img mb-col">
+                        <img src="/img/good-4.png" alt="">
+                      </div>
+                    </a>
+                    <a class="link d-block card__info" href="#">
+                      <p class="fs-14 fw-300 mb-2">Артикул:<span class="ml-1">2ZE8VE49J5</span>
+                      </p>
+                      <p class="fw-300 color-black card__title">Коньки раздвижные детские Nordway детские Nordway Click- girl</p>
+                      <div class="card__favorite">
+                        <label>
+                          <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                          <span>
+                            <svg width="20" height="18">
+                              <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                            </svg>
+                            <svg width="20" height="18">
+                              <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                    </a>
+                    <div class="card__price">
+                      <div class="price">
+                        <span>50 999</span>
+                        <span>₽</span>
+                      </div>
+                    </div>
+                    <div class="card__side">
+                      <div class="d-flex quantity js-quantity align-items-center">
+                        <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                          <svg width="12" height="12">
+                            <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                          </svg>
+                        </button>
+                        <input class="js-number" type="text" value="1" name="quantity-input-10" id="quantity-input-10">
                         <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
                           <svg width="12" height="12">
                             <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
@@ -386,6 +614,37 @@
                 </div>
               </div>
             </div>
+            <ul class="pagination list d-flex">
+              <li>
+                <a class="link pagination__arrow pagination__arrow--prev" href="#">
+                  <svg width="13" height="20">
+                    <use xlink:href="img/sprite/sprite.svg#icon-pagination-arrow"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="active">
+                <a class="link" href="#">1</a>
+              </li>
+              <li>
+                <a class="link" href="#">2</a>
+              </li>
+              <li>
+                <a class="link" href="#">3</a>
+              </li>
+              <li>
+                <a class="link" href="#">4</a>
+              </li>
+              <li>
+                <a class="link" href="#">5</a>
+              </li>
+              <li>
+                <a class="link pagination__arrow pagination__arrow--next" href="#">
+                  <svg width="13" height="20">
+                    <use xlink:href="img/sprite/sprite.svg#icon-pagination-arrow"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
