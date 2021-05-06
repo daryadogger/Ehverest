@@ -63,49 +63,6 @@ const deskMenu = () => {
       close();
     }
   });
-
-  const links = $headerMenu.find(".js-desk-menu-links a");
-  const contents = $headerMenu.find(".desk-menu__content");
-
-  function deskMenuContentChange(link) {
-    link.addClass("hover");
-
-    const id = link.attr("data-id");
-
-    resetContent();
-    let content = $headerMenu.find(`.desk-menu__content[data-id="${id}"]`);
-    content.addClass("show");
-  }
-  deskMenuContentChange($(links[0]));
-
-  function resetHover() {
-    links.each(function() {
-      let link = $(this);
-      link.removeClass("hover");
-    });
-  }
-
-  function resetContent() {
-    contents.each(function() {
-      let item = $(this);
-      item.removeClass("show");
-    });
-  }
-
-  links.each(function() {
-    let link = $(this);
-
-    link.on("click", function (evt) {
-      evt.preventDefault();
-    });
-
-    link.on("mouseenter", function () {
-      resetHover();
-      deskMenuContentChange(link);
-    });
-
-  });
-
 };
 
 export default deskMenu;

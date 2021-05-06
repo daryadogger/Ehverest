@@ -10619,6 +10619,7 @@ small {
           align-items: center; }
   .header .logo svg {
     height: auto;
+    max-height: 85px;
     -webkit-transition: color 0.3s, -webkit-transform 0.3s;
     transition: color 0.3s, -webkit-transform 0.3s;
     transition: color 0.3s, transform 0.3s;
@@ -11236,13 +11237,16 @@ small {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 5;
+  z-index: 8;
   background-color: #ffffff;
-  -webkit-box-shadow: 2px 2px 20px rgba(4, 20, 106, 0.12);
-          box-shadow: 2px 2px 20px rgba(4, 20, 106, 0.12); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 5px 6px rgba(4, 20, 106, 0.12);
+          box-shadow: 0 5px 6px rgba(4, 20, 106, 0.12); }
   .desk-menu .container {
-    padding-top: 15px;
-    padding-bottom: 15px; }
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 350px;
+    overflow-y: scroll; }
   .desk-menu .container::before {
     position: absolute;
     content: "";
@@ -11287,7 +11291,7 @@ small {
   margin-bottom: 8px; }
 
 /* полоса прокрутки (скроллбар) */
-.desk-menu::-webkit-scrollbar {
+.desk-menu .container::-webkit-scrollbar {
   width: 10px;
   /* ширина для вертикального скролла */
   height: 8px;
@@ -11296,7 +11300,7 @@ small {
   border-radius: 5px; }
 
 /* ползунок скроллбара */
-.desk-menu::-webkit-scrollbar-thumb {
+.desk-menu .container::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px; }
 
@@ -11884,9 +11888,8 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
   width: 120px;
   margin-right: 20px; }
   .catalog-content--row .card--good .card__img img {
-    max-height: 120px;
-    width: auto;
-    max-width: 100%; }
+    max-height: 115px;
+    max-width: 120px; }
 
 .catalog-content--row .card__favorite {
   display: none; }
